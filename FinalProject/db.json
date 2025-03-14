@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "id": "dc15",
+      "nombre": "Marieza Torres Gómez",
+      "cedula": "604780135",
+      "telefono": "71846483",
+      "correo": "mariezactg@hotmail.com",
+      "filial": "luis",
+      "carnet": "No",
+      "password": "1234"
+    },
+    {
+      "id": "3319",
+      "nombre": "steven",
+      "cedula": "23765465",
+      "telefono": "3776677455",
+      "correo": "mariezactg@hotmail.com",
+      "filial": "fray",
+      "carnet": "Sí",
+      "password": "12345"
+    }
+  ]
+}
