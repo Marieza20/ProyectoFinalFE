@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    margin: auto;
+    width: 90%;
+    display: flex;
+    gap: 40px;
+}
+
+#aside{
+    width: 20%;
+}
+
+#main{
+    width: 70%;
+}
+
+#img{
+    width: 100%;
+}

@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from '../../components/Home/Header'
+import AcercaDe from '../../components/Home/AcercaDe'
 import Footer from '../../components/Home/Footer'
-import AcercaDe from '../../components/AcercaDe'
 
 function Home() {
   return (

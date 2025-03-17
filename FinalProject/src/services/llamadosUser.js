@@ -21,7 +21,7 @@ async function get() {
 
 
 //////////LLAMADO POST//////////
-async function post(nombre,cedula,telefono,correo,filial,carnet,password) {
+async function post(nombre,cedula,telefono,correo,filial,carnet,password,type) {
     try {
         const userData = { 
             nombre,
@@ -30,7 +30,8 @@ async function post(nombre,cedula,telefono,correo,filial,carnet,password) {
             correo,
             filial,
             carnet,
-            password
+            password,
+            type
         };
 
         const response = await fetch("http://localhost:3000/users", {
@@ -50,7 +51,7 @@ async function post(nombre,cedula,telefono,correo,filial,carnet,password) {
 
 
 //////////////LLAMADO UPDATE/////////////
-async function update(nombre,cedula,telefono,correo,filial,carnet,password,id) 
+async function update(nombre,cedula,telefono,correo,filial,carnet,password,type,id) 
 {
     try {
         const userData = { 
@@ -60,7 +61,8 @@ async function update(nombre,cedula,telefono,correo,filial,carnet,password,id)
             correo,
             filial,
             carnet,
-            password
+            password,
+            type
         };
 
         const response = await fetch("http://localhost:3000/users/"+id, {

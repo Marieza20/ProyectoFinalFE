@@ -41,7 +41,8 @@ function FormRegister() {
   }
 
   function cargar() {
-    llamadosUser.post(nombreUser,cedulaUser,telefonoUser,correoUser,filialUser,carnetUser,passwordUser)
+    llamadosUser.post(nombreUser,cedulaUser,telefonoUser,correoUser,filialUser,carnetUser,passwordUser,"user")
+  
   }
   return (
     <div>

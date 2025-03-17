@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/Prueba.css'
+import '../../styles/Prueba.css'
 
 function Apoyo() {
   return (

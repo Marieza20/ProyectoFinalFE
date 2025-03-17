@@ -1,7 +1,7 @@
 import React from 'react'
 import HeaderUser from '../../components/User/HeaderUser'
+import AcercaDe from '../../components/Home/AcercaDe'
 import FooterUser from '../../components/User/FooterUser'
-import AcercaDe from '../../components/AcercaDe'
 
 function HomeUser() {
   return (

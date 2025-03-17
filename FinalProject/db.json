@@ -8,7 +8,8 @@
       "correo": "mariezactg@hotmail.com",
       "filial": "luis",
       "carnet": "No",
-      "password": "1234"
+      "password": "1234",
+      "type": "admin"
     },
     {
       "id": "3319",
@@ -18,7 +19,25 @@
       "correo": "mariezactg@hotmail.com",
       "filial": "fray",
       "carnet": "Sí",
-      "password": "12345"
+      "password": "12345",
+      "type": "user"
+    }
+  ],
+  "habitantes": [
+    {
+      "id": "5bc4",
+      "apodo": "x",
+      "nombre": "x",
+      "edad": "1",
+      "cedula": "1",
+      "zona": "20 de Noviembre",
+      "alimentacion": "x",
+      "estudios": "x",
+      "enfermedades": "x",
+      "medicamentos": "x",
+      "atencionMed": "x",
+      "atencionPsi": "x",
+      "laboral": "x"
     }
   ]
 }

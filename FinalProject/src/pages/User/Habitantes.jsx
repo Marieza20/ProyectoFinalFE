@@ -1,16 +1,17 @@
 import React from 'react'
+
 import HeaderUser from '../../components/User/HeaderUser'
-import Apoyo from '../../components/Home/Apoyo'
+import Registro from '../../components/User/Registro'
 import FooterUser from '../../components/User/FooterUser'
 
-function RedUser() {
+function Habitantes() {
   return (
     <div>
         <HeaderUser />
-        <Apoyo />
+        <Registro />
         <FooterUser />
     </div>
   )
 }
 
-export default RedUser
+export default Habitantes

@@ -1,16 +1,16 @@
 import React from 'react'
 import HeaderUser from '../../components/User/HeaderUser'
-import Apoyo from '../../components/Home/Apoyo'
+import Calendario from '../../components/User/Calendario'
 import FooterUser from '../../components/User/FooterUser'
 
-function RedUser() {
+function Agenda() {
   return (
     <div>
         <HeaderUser />
-        <Apoyo />
+        <Calendario />
         <FooterUser />
     </div>
   )
 }
 
-export default RedUser
+export default Agenda
