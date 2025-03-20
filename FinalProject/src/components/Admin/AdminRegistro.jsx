@@ -16,11 +16,11 @@ function AdminRegistro() {
     },[]);
 
     function editar(id){
-        Swal.fire({
+        const encontrado = habitantes.find(habitante => habitante.id===id)  
+        Swal.fire({ 
           title: "Editar",
           icon: "info",
-          input: "text",
-          inputValue: habitantes.nombre,
+          html: ``,
           showCancelButton: true,
           confirmButtonText: "Guardar",
         }).then((result) => {
@@ -28,8 +28,8 @@ function AdminRegistro() {
             const nuevoNombre = result.value;
             Swal.fire("Guardado", "", "success");
             //const encontrado = tareas.map(tarea => tarea[estado].id)
-            const encontrado2 = tareas.find(tarea => tarea.id===id)        
-            llamadosTareas.update(nuevoNombre,encontrado2.estado,id);
+            const encontrado = habitantes.find(habitante => habitante.id===id)        
+            llamadosHabitantes.update(nuevoNombre,id);
             actualizar()
             async function actualizar(){
               const datos = await llamadosHabitantes.get()
@@ -59,7 +59,7 @@ function AdminRegistro() {
         }
     });
     }
-    
+
     return (
         <div>
             <div>

@@ -26,15 +26,18 @@ function FormLog() {
   }
 
   function acceder() {
-    const encontrado = users.filter(user => (user.telefono===nombreUser || user.correo===nombreUser) && user.password===passwordUser)
+    const encontrado = users.find(user => (user.telefono===nombreUser || user.correo===nombreUser) && user.password===passwordUser)
 
     if (encontrado.length===0) {
       console.log("Usuario o contraseña incorrectos");
     }else{
-      navigate('/homeUser')
+      if (encontrado.type === "admin") {
+        navigate('/homeAd')
+      }else{
+        navigate('/homeUser')
+      }
     }
   }
-
 
   return (
     <div>

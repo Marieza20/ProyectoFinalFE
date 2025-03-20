@@ -8,7 +8,7 @@ function HeaderAdmin() {
         <nav id='nav'>
             <ul id='ul1'>
                 <li><Link id='Link' to="/habitantesAd">Registro</Link></li>
-                <li><Link id='Link' to="/organizacionAd"> Organización</Link></li>
+                <li><Link id='Link' to="/organizacionAd">Organización</Link></li>
                 <li><Link id='Link' to="/agendaAd">Agenda</Link></li>
             </ul>
             <ul id='ul2'>

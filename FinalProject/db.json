@@ -6,7 +6,7 @@
       "cedula": "604780135",
       "telefono": "71846483",
       "correo": "mariezactg@hotmail.com",
-      "filial": "luis",
+      "filial": "San Luis",
       "carnet": "No",
       "password": "1234",
       "type": "admin"
@@ -17,18 +17,18 @@
       "cedula": "23765465",
       "telefono": "3776677455",
       "correo": "mariezactg@hotmail.com",
-      "filial": "fray",
+      "filial": "Fray Casiano",
       "carnet": "Sí",
       "password": "12345",
       "type": "user"
     },
     {
       "id": "17ee",
-      "nombre": "oliver miranda chacon",
+      "nombre": "Oliver Miranda Chacón",
       "cedula": "04730972",
       "telefono": "72146061",
       "correo": "omiranda1022@gmail.com",
-      "filial": "luis",
+      "filial": "San Luis",
       "carnet": "no",
       "password": "xdxd",
       "type": "user"
@@ -65,5 +65,36 @@
       "atencionPsi": "No",
       "laboral": "Sí"
     }
-  ]
+  ],
+  "equipos": [
+    {
+      "id": "7295",
+      "nombre": "Equipo de Cocina",
+      "encargado": "Jesús",
+      "descripcion": "El grupo se encarga de la preparación de los menús semanales y los alimentos para los habitantes de calle, así como el traslado al comedor. ",
+      "enlace": "x"
+    },
+    {
+      "id": "331b",
+      "nombre": "Equipo de Ambientación",
+      "encargado": "Rodolfo",
+      "descripcion": "El grupo se encarga de la preparación del lugar, orden del mobiliario y vajilla para cada uno delos habitantes de calle.",
+      "enlace": "x"
+    },
+    {
+      "id": "f13d",
+      "nombre": "Equipo de Limpieza y Desinfección",
+      "encargado": "Nuria",
+      "descripcion": "El grupo se encarga de la desinfección del lugar posterior a su uso, el lavado de platos, vasos y cucharas, la limpieza de sillas y mesas.",
+      "enlace": "x"
+    },
+    {
+      "id": "ff94",
+      "nombre": "Equipo de Escucha y Evangelización",
+      "encargado": "Ali",
+      "descripcion": "El grupo se encarga primeramente del trato directo con los habitantes de calle y posteriormente de transmitirles un mensaje de amor.",
+      "enlace": "x"
+    }
+  ],
+  "eventos":[]
 }
