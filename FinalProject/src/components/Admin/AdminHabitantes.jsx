@@ -86,24 +86,60 @@ function Admin() {
                 <input onChange={nombre} value={nombreHabitante} type="text" placeholder='Nombre' />
                 <input onChange={edad} value={edadHabitante} type="number" placeholder='Edad' />
                 <input onChange={cedula} value={cedulaHabitante} type="number" placeholder='Cédula' />
-                <select onChange={zona} value={zonaHabitante} placeholder="Zona">
-                    <option value="" selected>Elige la zona</option>
+                <select onChange={zona} value={zonaHabitante}>
+                    <option value="" selected>Zona</option>
                     <option value="Porvenir">Porvenir</option>
                     <option value="20 de Noviembre">20 de Noviembre</option>
                     <option value="Chacarita">Chacarita</option>
                     <option value="Carrizal">Carrizal</option>
-                    <option value="Huerto">El Huerto</option>
+                    <option value="El Huerto">El Huerto</option>
                     <option value="San Luis">San Luis</option>
                     <option value="Santa Eduviges">Santa Eduviges</option>
                     <option value="Fray Casiano">Fray Casiano</option>
+                    <option value="Fuera de Chacarita">Fuera de Chacarita</option>
                 </select>
-                <input onChange={alimentacion} value={alimentacionHabitante} type="text" placeholder='Alimentación' />
-                <input onChange={estudios} value={estudiosHabitante} type="text" placeholder='Estudios' />
-                <input onChange={enfermedades} value={enfermedadesHabitante} type="text" placeholder='Enfermedades' />
-                <input onChange={medicamentos} value={medicamentosHabitante} type="text" placeholder='Medicamentos' />
-                <input onChange={atencionMed} value={atencionMedHabitante} type="text" placeholder='Atención Médica' />
-                <input onChange={atencionPsi} value={atencionPsiHabitante} type="text" placeholder='Atención Psicológica' />
-                <input onChange={laboral} value={laboralHabitante} type="text" placeholder='Formación Laboral' />
+                <select onChange={alimentacion} value={alimentacionHabitante}>
+                    <option value="" selected>Frecuencia de la alimentación</option>
+                    <option value="Una vez por semana">Una vez por semana</option>
+                    <option value="Una vez por quincena">Una vez por quincena</option>
+                    <option value="Una vez por mes">Una vez por quincena</option>
+                    <option value="No recibe">No recibe</option>
+                </select>
+                <select onChange={estudios} value={estudiosHabitante}>
+                    <option value="" selected>Nivel de Estudios</option>
+                    <option value="Sin Estudios">Sin Estudios</option>
+                    <option value="Primaria incompleta">Primaria incompleta</option>
+                    <option value="Primaria completa">Primaria completa</option>
+                    <option value="Secundaria incompleta">Secundaria incompleta</option>
+                    <option value="Secundaria completa">Secundaria completa</option>
+                    <option value="Universidad incompleta">Universidad incompleta</option>
+                    <option value="Universidad completa">Universidad completa</option>
+                </select>
+                <select onChange={enfermedades} value={enfermedadesHabitante}>
+                    <option value="" selected>¿Padece alguna enfermedad?</option>
+                    <option value="Sí">Sí</option>
+                    <option value="No">No</option>
+                </select>
+                <select onChange={medicamentos} value={medicamentosHabitante}>
+                    <option value="" selected>¿Necesita Medicamentos?</option>
+                    <option value="Sí">Sí</option>
+                    <option value="No">No</option>
+                </select>
+                <select onChange={atencionMed} value={atencionMedHabitante}>
+                    <option value="" selected>¿Recibe Atención Médica?</option>
+                    <option value="Sí">Sí</option>
+                    <option value="No">No</option>
+                </select>
+                <select onChange={atencionPsi} value={atencionPsiHabitante}>
+                    <option value="" selected>¿Recibe Atención Psicológica?</option>
+                    <option value="Sí">Sí</option>
+                    <option value="No">No</option>
+                </select>
+                <select onChange={laboral} value={laboralHabitante}>
+                    <option value="" selected>¿Recibe Formación Laboral?</option>
+                    <option value="Sí">Sí</option>
+                    <option value="No">No</option>
+                </select>
 
                 <input onClick={cargar} type="button" value="Agregar" />
             </div>

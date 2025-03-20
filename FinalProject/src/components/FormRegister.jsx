@@ -42,7 +42,7 @@ function FormRegister() {
 
   function cargar() {
     llamadosUser.post(nombreUser,cedulaUser,telefonoUser,correoUser,filialUser,carnetUser,passwordUser,"user")
-  
+    navigate('/login')
   }
   return (
     <div>
@@ -61,19 +61,20 @@ function FormRegister() {
 
         <label htmlFor="filial">Filial:</label>
         <select onChange={filial} value={filialUser} id="filial">
-          <option value="" selected>Elige tu filial</option>
-          <option value="porvenir">Porvenir</option>
-          <option value="20">20 de Noviembre</option>
-          <option value="chacarita">Chacarita</option>
-          <option value="carrizal">Carrizal</option>
-          <option value="huerto">El Huerto</option>
-          <option value="luis">San Luis</option>
-          <option value="eduviges">Santa Eduviges</option>
-          <option value="fray">Fray Casiano</option>
+          <option value="" selected>Elige una opción</option>
+          <option value="Porvenir">Porvenir</option>
+          <option value="20 de Noviembre">20 de Noviembre</option>
+          <option value="Chacarita">Chacarita</option>
+          <option value="Carrizal">Carrizal</option>
+          <option value="El Huerto">El Huerto</option>
+          <option value="San Luis">San Luis</option>
+          <option value="Santa Eduviges">Santa Eduviges</option>
+          <option value="Fray Casiano">Fray Casiano</option>
         </select>
 
         <label htmlFor="carnet">Carnet de Manipulación de Alimentos:</label>
         <select onChange={carnet} value={carnetUser} id="carnet">
+          <option value="" selected>Elige una opción</option>
           <option value="si">Sí</option>
           <option value="no">No</option>
         </select>

@@ -1,18 +1,18 @@
 import React from 'react'
 import Header from '../../components/Home/Header'
-import HeaderRed from '../../components/Home/HeaderRed'
+import InfoPadrinos from '../../components/InfoPadrinos'
 import Footer from '../../components/Home/Footer'
-import InfoDonacion from '../../components/InfoDonacion'
+import HeaderRed from '../../components/Home/HeaderRed'
 
-function Red() {
+function Padrinos() {
   return (
     <div>
         <Header />
         <HeaderRed />
-        <InfoDonacion />
+        <InfoPadrinos />
         <Footer />
     </div>
   )
 }
 
-export default Red
+export default Padrinos

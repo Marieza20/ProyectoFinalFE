@@ -1,18 +1,18 @@
 import React from 'react'
 import HeaderUser from '../../components/User/HeaderUser'
 import HeaderRedUser from '../../components/User/HeaderRedUser'
+import InfoColaboracion from '../../components/InfoColaboracion'
 import FooterUser from '../../components/User/FooterUser'
-import InfoDonacion from '../../components/InfoDonacion'
 
-function RedUser() {
+function ColaboracionUser() {
   return (
     <div>
         <HeaderUser />
         <HeaderRedUser />
-        <InfoDonacion />
+        <InfoColaboracion />
         <FooterUser />
     </div>
   )
 }
 
-export default RedUser
+export default ColaboracionUser

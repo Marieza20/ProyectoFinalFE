@@ -1,7 +1,7 @@
 import React from 'react'
-import '../../styles/Prueba.css'
+import '../styles/Prueba.css'
 
-function Apoyo() {
+function InfoPadrinos() {
   return (
     <div>
         <div>
@@ -27,4 +27,4 @@ function Apoyo() {
   )
 }
 
-export default Apoyo
+export default InfoPadrinos

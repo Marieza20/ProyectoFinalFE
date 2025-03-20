@@ -1,18 +1,18 @@
 import React from 'react'
 import HeaderAdmin from '../../components/Admin/HeaderAdmin'
 import HeaderRedAd from '../../components/Admin/HeaderRedAd'
-import InfoDonacion from '../../components/InfoDonacion'
+import InfoPadrinos from '../../components/InfoPadrinos'
 import FooterAdmin from '../../components/Admin/FooterAdmin'
 
-function RedAd() {
+function PadrinosAd() {
   return (
     <div>
         <HeaderAdmin />
         <HeaderRedAd />
-        <InfoDonacion />
+        <InfoPadrinos />
         <FooterAdmin />
     </div>
   )
 }
 
-export default RedAd
+export default PadrinosAd

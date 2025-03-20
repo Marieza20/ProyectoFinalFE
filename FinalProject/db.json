@@ -21,23 +21,49 @@
       "carnet": "Sí",
       "password": "12345",
       "type": "user"
+    },
+    {
+      "id": "17ee",
+      "nombre": "oliver miranda chacon",
+      "cedula": "04730972",
+      "telefono": "72146061",
+      "correo": "omiranda1022@gmail.com",
+      "filial": "luis",
+      "carnet": "no",
+      "password": "xdxd",
+      "type": "user"
     }
   ],
   "habitantes": [
     {
-      "id": "5bc4",
+      "id": "e285",
+      "apodo": "Chucho",
+      "nombre": "Gerardo",
+      "edad": "43",
+      "cedula": "704850948",
+      "zona": "Fray Casiano",
+      "alimentacion": "1 vez por semana",
+      "estudios": "Sin Estudios",
+      "enfermedades": "No",
+      "medicamentos": "No",
+      "atencionMed": "No",
+      "atencionPsi": "Sí",
+      "laboral": "Sí"
+    },
+    {
+      "id": "e5dc",
       "apodo": "x",
       "nombre": "x",
       "edad": "1",
       "cedula": "1",
       "zona": "20 de Noviembre",
-      "alimentacion": "x",
-      "estudios": "x",
-      "enfermedades": "x",
-      "medicamentos": "x",
-      "atencionMed": "x",
-      "atencionPsi": "x",
-      "laboral": "x"
+      "alimentacion": "Una vez por quincena",
+      "estudios": "Primaria incompleta",
+      "enfermedades": "No",
+      "medicamentos": "No",
+      "atencionMed": "No",
+      "atencionPsi": "No",
+      "laboral": "Sí"
     }
   ]
 }

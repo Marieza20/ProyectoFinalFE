@@ -18,17 +18,17 @@ function FooterAdmin() {
             <div>
                 <h3 id='h3'>Navegación</h3>
                 <ul id='ul'>
-                    <li><Link id='Link' to="/homeUser">Acerca de</Link></li>
-                    <li><Link id='Link' to="/estadisticaUser"> Estadísticas</Link></li>
-                    <li><Link id='Link' to="/redUser">Red de Apoyo</Link></li>
+                    <li><Link id='Link' to="/homeAd">Acerca de</Link></li>
+                    <li><Link id='Link' to="/estadisticaAd"> Estadísticas</Link></li>
+                    <li><Link id='Link' to="/redAd">Red de Apoyo</Link></li>
                 </ul>
             </div>
             <div>
                 <h3 id='h3'>Navegación</h3>
                 <ul id='ul'>
-                    <li><Link id='Link' to="/habitantes">Registro</Link></li>
-                    <li><Link id='Link' to="/organizacion">Organización</Link></li>
-                    <li><Link id='Link' to="/agenda">Agenda</Link></li>
+                    <li><Link id='Link' to="/habitantesAd">Registro</Link></li>
+                    <li><Link id='Link' to="/organizacionAd">Organización</Link></li>
+                    <li><Link id='Link' to="/agendaAd">Agenda</Link></li>
                 </ul>
             </div>
             <div>

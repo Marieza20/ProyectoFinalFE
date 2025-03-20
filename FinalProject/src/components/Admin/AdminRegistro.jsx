@@ -32,8 +32,8 @@ function AdminRegistro() {
             llamadosTareas.update(nuevoNombre,encontrado2.estado,id);
             actualizar()
             async function actualizar(){
-              const datos = await llamadosTareas.get()
-              setTareas(datos)
+              const datos = await llamadosHabitantes.get()
+              setHabitantes(datos)
             }
           }
         });

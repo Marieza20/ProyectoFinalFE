@@ -1,18 +1,18 @@
 import React from 'react'
 import Header from '../../components/Home/Header'
 import HeaderRed from '../../components/Home/HeaderRed'
+import InfoColaboracion from '../../components/InfoColaboracion'
 import Footer from '../../components/Home/Footer'
-import InfoDonacion from '../../components/InfoDonacion'
 
-function Red() {
+function Colaboracion() {
   return (
     <div>
         <Header />
         <HeaderRed />
-        <InfoDonacion />
+        <InfoColaboracion />
         <Footer />
     </div>
   )
 }
 
-export default Red
+export default Colaboracion
