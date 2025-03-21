@@ -24,18 +24,20 @@ function AdminEquipos() {
     SetEnlaceEquipo(evento.target.value)
   }
 
-  function cargar() {
+  async function cargar() {
     llamadosEquipo.post(nombreEquipo,encargadoEquipo,descripcionEquipo,enlaceEquipo)
   }
 
   return (
     <div>
-      <div>
-        <input onChange={nombre} value={nombreEquipo} type="text" placeholder='Nombre del Equipo' />
-        <input onChange={encargado} value={encargadoEquipo} type="text" placeholder='Encargado del Equipo' />
-        <textarea onChange={descripcion} value={descripcionEquipo} placeholder='Descripción'></textarea>
-        <input onChange={enlace} value={enlaceEquipo} type='text' placeholder='Enlace al grupo de WhatsApp' />
-        <box-icon onClick={cargar} name='check'></box-icon>
+      <div id="ContainerF">
+        <div id='FormEquipo'>
+          <input onChange={nombre} value={nombreEquipo} type="text" placeholder='Nombre del Equipo' />
+          <input onChange={encargado} value={encargadoEquipo} type="text" placeholder='Encargado del Equipo' />
+          <textarea onChange={descripcion} value={descripcionEquipo} placeholder='Descripción'></textarea>
+          <input onChange={enlace} value={enlaceEquipo} type='text' placeholder='Enlace al grupo de WhatsApp' />
+          <box-icon onClick={cargar} name='check'></box-icon>
+        </div>
       </div>
     </div>
   )

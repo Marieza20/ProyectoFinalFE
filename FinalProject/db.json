@@ -78,7 +78,7 @@
       "id": "331b",
       "nombre": "Equipo de Ambientación",
       "encargado": "Rodolfo",
-      "descripcion": "El grupo se encarga de la preparación del lugar, orden del mobiliario y vajilla para cada uno delos habitantes de calle.",
+      "descripcion": "El grupo se encarga de la preparación del lugar, orden del mobiliario y vajilla para cada uno de los habitantes de calle.",
       "enlace": "x"
     },
     {
@@ -89,12 +89,21 @@
       "enlace": "x"
     },
     {
-      "id": "ff94",
+      "id": "224e",
       "nombre": "Equipo de Escucha y Evangelización",
       "encargado": "Ali",
       "descripcion": "El grupo se encarga primeramente del trato directo con los habitantes de calle y posteriormente de transmitirles un mensaje de amor.",
       "enlace": "x"
     }
   ],
-  "eventos":[]
+  "eventos": [
+    {
+      "id": "0fd9",
+      "nombre": "Taller Formación Básica",
+      "fecha": "2025-03-22",
+      "lugar": "Salón de la Curia, Puntarenas",
+      "horai": "08:00",
+      "horaf": "12:00"
+    }
+  ]
 }

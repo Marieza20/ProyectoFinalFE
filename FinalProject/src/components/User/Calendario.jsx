@@ -5,7 +5,7 @@ import 'boxicons'
 
 function Calendario() {
   const [eventos, setEventos]=useState([])
-      
+  
   useEffect(() => {
   async function fetchDataEventos(){
       const datos = await llamadosEventos.get()
@@ -20,16 +20,13 @@ function Calendario() {
         {eventos.map((evento,index) =>(
         <li key={index}>
           <div className="accordion-item">
-            <h2>
-              <button type="button">
-                Sábado 1 de Marzo
-              </button>
-            </h2>
+            <h2><button type="button">{evento.fecha}</button></h2>
             <div>
               <div className="accordion-body">
                 <p>{evento.nombre}</p>
                 <p>{evento.lugar}</p>
-                <p>{evento.hora}</p>
+                <p>{evento.horai}</p>
+                <p>{evento.horaf}</p>
                 <box-icon name='check'></box-icon>
                 <box-icon name='x'></box-icon>
               </div>

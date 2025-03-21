@@ -39,6 +39,9 @@ div{
     cursor: pointer;
 }
 
+box-icon{
+    cursor: pointer;
+}
 
 #nav2{
     margin: auto;

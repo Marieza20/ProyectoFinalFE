@@ -14,30 +14,6 @@ function AdminRegistro() {
     };
     fetchDataHabitantes();
     },[]);
-
-    function editar(id){
-        const encontrado = habitantes.find(habitante => habitante.id===id)  
-        Swal.fire({ 
-          title: "Editar",
-          icon: "info",
-          html: ``,
-          showCancelButton: true,
-          confirmButtonText: "Guardar",
-        }).then((result) => {
-          if (result.isConfirmed) {
-            const nuevoNombre = result.value;
-            Swal.fire("Guardado", "", "success");
-            //const encontrado = tareas.map(tarea => tarea[estado].id)
-            const encontrado = habitantes.find(habitante => habitante.id===id)        
-            llamadosHabitantes.update(nuevoNombre,id);
-            actualizar()
-            async function actualizar(){
-              const datos = await llamadosHabitantes.get()
-              setHabitantes(datos)
-            }
-          }
-        });
-    }
     
     function eliminar(id) {
     Swal.fire({

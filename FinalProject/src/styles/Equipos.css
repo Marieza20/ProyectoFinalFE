@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#ContainerF{
+    margin: auto;
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #696969;
+    border-radius: 10px;
+}
+
+#ContainerFE{
+    margin: auto;
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #696969;
+    border-radius: 10px;
+}
+
+#FormEquipo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#FormEquipo input{
+    padding: 5px;
+    outline: none;
+}
+
+#FormEquipo textarea{
+    max-width: 260px;
+    min-width: 260px;
+    min-height: 100px;
+    padding: 5px;
+    outline: none;
+}
+
+#Container{
+    margin: auto;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+li{
+    list-style: none;
+}
+
+#Card{
+    margin-top: 20px;
+    width: 350px;
+    min-height: 220px;
+    padding: 20px;
+    border: 1px solid #696969;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 30% 60% 10%;
+}
+
+#btn{
+    display: grid;
+    grid-template-columns: 50% 20%;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.oculto{
+    display: none;
+}
+.mostrar{
+    display: block;
+}
