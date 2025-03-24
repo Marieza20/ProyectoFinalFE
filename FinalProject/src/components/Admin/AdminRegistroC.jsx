@@ -4,6 +4,12 @@ import Swal from 'sweetalert2'
 
 function AdminRegistroC() {
     const [eventos, setEventos]=useState([])
+    const [nombreEvento, SetNombreEvento]=useState()
+    const [fechaEvento, SetFechaEvento]=useState()
+    const [lugarEvento, SetLugarEvento]=useState()
+    const [horaIEvento, SetHoraIEvento]=useState()
+    const [horaFEvento, SetHoraFEvento]=useState()
+    const [editandoId, setEditandoId] = useState(null);
 
     useEffect(() => {
         async function fetchDataEventos(){
@@ -12,6 +18,43 @@ function AdminRegistroC() {
         };
         fetchDataEventos();
     },[]);
+
+    function nombre(evento) {
+        SetNombreEvento(evento.target.value)
+    }
+
+    function fecha(evento) {
+        SetFechaEvento(evento.target.value)
+    }
+
+    function lugar(evento) {
+        SetLugarEvento(evento.target.value)
+    }
+
+    function horaI(evento) {
+        SetHoraIEvento(evento.target.value)
+    }
+
+    function horaF(evento) {
+        SetHoraFEvento(evento.target.value)
+    }
+
+    function editar(id) {
+        const encontrado = eventos.find(evento => evento.id === id);
+        SetNombreEvento(encontrado.nombre);
+        SetFechaEvento(encontrado.fecha);
+        SetLugarEvento(encontrado.lugar);
+        SetHoraIEvento(encontrado.horai);
+        SetHoraFEvento(encontrado.horaf);
+        setEditandoId(id);
+    }
+
+    async function cargar(id) {
+        llamadosEventos.update(nombreEvento,fechaEvento,lugarEvento,horaIEvento,horaFEvento,id)  
+        const datos = await llamadosEventos.get()
+        setEventos(datos)
+        setEditandoId(null);
+    }
 
     function eliminar(id) {
         Swal.fire({
@@ -36,22 +79,30 @@ function AdminRegistroC() {
 
     return (
         <div>
-            <div>
+            <div id='Container'>
                 {eventos.map((evento,index) =>(
                 <li key={index}>
-                    <div>
+                    <div id='Card'>
                         <h2><button type="button">{evento.fecha}</button></h2>
                         <div>
-                            <div>
-                                <p>{evento.nombre}</p>
-                                <p>{evento.lugar}</p>
-                                <p>{evento.horai}</p>
-                                <p>{evento.horaf}</p>
-                                <box-icon id='icono' onClick={e=>editar(evento.id)} type='solid' name='pencil'></box-icon>
-                                <box-icon id='icono' onClick={e=>eliminar(evento.id)} type='solid' name='trash-alt'></box-icon>
-                            </div>
+                            <p>{evento.nombre}</p>
+                            <p>{evento.lugar}</p>
+                            <p>{evento.horai}</p>
+                            <p>{evento.horaf}</p>
+                            <box-icon id='icono' onClick={e=>editar(evento.id)} type='solid' name='pencil'></box-icon>
+                            <box-icon id='icono' onClick={e=>eliminar(evento.id)} type='solid' name='trash-alt'></box-icon>
                         </div>
                     </div>
+                    {editandoId === evento.id && (
+                    <div id="ContainerFE" className="mostrar">
+                        <input onChange={nombre} value={nombreEvento} type="text" />
+                        <input onChange={fecha} value={fechaEvento} type="date" />
+                        <input onChange={lugar} value={lugarEvento} type="text" />
+                        <input onChange={horaI} value={horaIEvento} type="time" />
+                        <input onChange={horaF} value={horaFEvento} type="time" />
+                        <box-icon onClick={e=>cargar(evento.id)} name='check'></box-icon>
+                    </div>
+                    )}
                 </li>
                 ))}
         </div>

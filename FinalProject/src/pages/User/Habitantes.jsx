@@ -1,14 +1,13 @@
 import React from 'react'
-
 import HeaderUser from '../../components/User/HeaderUser'
-import Registro from '../../components/User/Registro'
+import RegistroHabitantes from '../../components/User/RegistroHabitantes'
 import FooterUser from '../../components/User/FooterUser'
 
 function Habitantes() {
   return (
     <div>
         <HeaderUser />
-        <Registro />
+        <RegistroHabitantes />
         <FooterUser />
     </div>
   )

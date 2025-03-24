@@ -1,18 +1,16 @@
 import React from 'react'
 import HeaderUser from '../../components/User/HeaderUser'
-import HeaderRedUser from '../../components/User/HeaderRedUser'
-import InfoDonacion from '../../components/Home/InfoDonacion'
+import PerfilUser from '../../components/User/PerfilUser'
 import FooterUser from '../../components/User/FooterUser'
 
-function RedUser() {
+function Perfil() {
   return (
     <div>
         <HeaderUser />
-        <HeaderRedUser />
-        <InfoDonacion />
+        <PerfilUser />
         <FooterUser />
     </div>
   )
 }
 
-export default RedUser
+export default Perfil

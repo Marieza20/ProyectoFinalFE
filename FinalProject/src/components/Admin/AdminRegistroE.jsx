@@ -1,17 +1,16 @@
 import React, {useState,useEffect} from 'react'
-
 import llamadosEquipo from '../../services/llamadosEquipo'
 import Swal from 'sweetalert2'
 import 'boxicons'
 import '../../styles/Equipos.css'
 
 function AdminRegistroE() {
+    const [equipos, setEquipos]=useState([])
     const [nombreEquipo, SetNombreEquipo]=useState()
     const [encargadoEquipo, SetEncargadoEquipo]=useState()
     const [descripcionEquipo, SetDescripcionEquipo]=useState()
     const [enlaceEquipo, SetEnlaceEquipo]=useState()
-    const [equipos, setEquipos]=useState([])
-    const [style, setStyle]=useState("oculto")
+    const [editandoId, setEditandoId] = useState(null);
 
     useEffect(() => {
     async function fetchDataEquipos(){
@@ -26,30 +25,31 @@ function AdminRegistroE() {
     }
 
     function encargado(evento) {
-    SetEncargadoEquipo(evento.target.value)
+        SetEncargadoEquipo(evento.target.value)
     }
 
     function descripcion(evento) {
-    SetDescripcionEquipo(evento.target.value)
+        SetDescripcionEquipo(evento.target.value)
     }
 
     function enlace(evento) {
-    SetEnlaceEquipo(evento.target.value)
+        SetEnlaceEquipo(evento.target.value)
     }
 
     function editar(id) {
         const encontrado = equipos.find(equipo => equipo.id===id)
-        if(style === "oculto"){
-            setStyle("mostrar");
-        }else{
-            setStyle("oculto");
-        }
+        SetNombreEquipo(encontrado.nombre);
+        SetEncargadoEquipo(encontrado.encargado);
+        SetDescripcionEquipo(encontrado.descripcion);
+        SetEnlaceEquipo(encontrado.enlace);
+        setEditandoId(id);
     }
 
     async function cargar(id) {
         llamadosEquipo.update(nombreEquipo,encargadoEquipo,descripcionEquipo,enlaceEquipo,id)
         const datos = await llamadosEquipo.get()
         setEquipos(datos)
+        setEditandoId(null);
     }
     
     function eliminar(id) {
@@ -92,15 +92,17 @@ function AdminRegistroE() {
                             </div>
                         </div>
                     </div>
-                    <div id="ContainerFE" className={style}>
+                    {editandoId === equipo.id && (
+                    <div id="ContainerFE" className="mostrar">
                         <div id='FormEquipo'>
-                            <input onChange={nombre} value={nombreEquipo} type="text" placeholder={equipo.nombre} />
-                            <input onChange={encargado} value={encargadoEquipo} type="text" placeholder={equipo.encargado} />
-                            <textarea onChange={descripcion} value={descripcionEquipo} placeholder={equipo.descripcion}></textarea>
-                            <input onChange={enlace} value={enlaceEquipo} type='text' placeholder={equipo.enlace} />
+                            <input onChange={nombre} value={nombreEquipo} type="text" />
+                            <input onChange={encargado} value={encargadoEquipo} type="text" />
+                            <textarea onChange={descripcion} value={descripcionEquipo}></textarea>
+                            <input onChange={enlace} value={enlaceEquipo} type='text' />
                             <box-icon onClick={e=>cargar(equipo.id)} name='check'></box-icon>
                         </div>
                     </div>
+                    )}
                 </li>
                 ))}
             </div>

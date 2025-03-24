@@ -36,7 +36,6 @@
   ],
   "habitantes": [
     {
-      "id": "e285",
       "apodo": "Chucho",
       "nombre": "Gerardo",
       "edad": "43",
@@ -48,14 +47,14 @@
       "medicamentos": "No",
       "atencionMed": "No",
       "atencionPsi": "Sí",
-      "laboral": "Sí"
+      "laboral": "Sí",
+      "id": "e285"
     },
     {
-      "id": "e5dc",
       "apodo": "x",
-      "nombre": "x",
-      "edad": "1",
-      "cedula": "1",
+      "nombre": "Manuel",
+      "edad": "56",
+      "cedula": "602230654",
       "zona": "20 de Noviembre",
       "alimentacion": "Una vez por quincena",
       "estudios": "Primaria incompleta",
@@ -63,16 +62,17 @@
       "medicamentos": "No",
       "atencionMed": "No",
       "atencionPsi": "No",
-      "laboral": "Sí"
+      "laboral": "Sí",
+      "id": "e5dc"
     }
   ],
   "equipos": [
     {
-      "id": "7295",
       "nombre": "Equipo de Cocina",
-      "encargado": "Jesús",
+      "encargado": "Mary",
       "descripcion": "El grupo se encarga de la preparación de los menús semanales y los alimentos para los habitantes de calle, así como el traslado al comedor. ",
-      "enlace": "x"
+      "enlace": "x",
+      "id": "7295"
     },
     {
       "id": "331b",
@@ -98,12 +98,12 @@
   ],
   "eventos": [
     {
-      "id": "0fd9",
-      "nombre": "Taller Formación Básica",
+      "nombre": "Taller de Formación Básica",
       "fecha": "2025-03-22",
       "lugar": "Salón de la Curia, Puntarenas",
       "horai": "08:00",
-      "horaf": "12:00"
+      "horaf": "12:00",
+      "id": "0fd9"
     }
   ]
 }

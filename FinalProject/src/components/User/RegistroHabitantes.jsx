@@ -1,8 +1,7 @@
 import React, {useState,useEffect} from 'react'
-
 import llamadosHabitantes from '../../services/llamadosHabitantes'
 
-function Registro() {
+function RegistroHabitantes() {
   const [habitantes, setHabitantes]=useState([])
 
   useEffect(() => {
@@ -37,4 +36,4 @@ function Registro() {
   )
 }
 
-export default Registro
+export default RegistroHabitantes

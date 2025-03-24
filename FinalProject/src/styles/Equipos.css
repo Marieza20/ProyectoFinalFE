@@ -29,6 +29,7 @@
 #FormEquipo input{
     padding: 5px;
     outline: none;
+    width: 260px;
 }
 
 #FormEquipo textarea{

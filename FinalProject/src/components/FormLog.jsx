@@ -1,5 +1,4 @@
 import React, { useState,useEffect } from 'react'
-
 import { Link, useNavigate } from 'react-router-dom';
 import llamadosUser from '../services/llamadosUser';
 
@@ -31,6 +30,7 @@ function FormLog() {
     if (encontrado.length===0) {
       console.log("Usuario o contraseña incorrectos");
     }else{
+      localStorage.setItem("usuario",encontrado.id);
       if (encontrado.type === "admin") {
         navigate('/homeAd')
       }else{

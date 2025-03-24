@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-
 import llamadosEquipo from '../../services/llamadosEquipo'
 
 function AdminEquipos() {

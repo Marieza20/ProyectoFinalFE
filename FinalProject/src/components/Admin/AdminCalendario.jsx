@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-
 import llamadosEventos from '../../services/llamadosEventos'
 
 function AdminCalendario() {
@@ -35,13 +34,15 @@ function AdminCalendario() {
 
     return (
         <div>
-            <div>
-                <input onChange={nombre} value={nombreEvento} type="text" placeholder='Nombre del Evento' />
-                <input onChange={fecha} value={fechaEvento} type="date" placeholder='Fecha del Evento' />
-                <input onChange={lugar} value={lugarEvento} type="text" placeholder='Lugar' />
-                <input onChange={horaI} value={horaIEvento} type="time" placeholder='Hora Inicio' />
-                <input onChange={horaF} value={horaFEvento} type="time" placeholder='Hora Fin' />
-                <box-icon onClick={cargar} name='check'></box-icon>
+            <div id='ContainerF'>
+                <div id="FormEquipo">
+                    <input onChange={nombre} value={nombreEvento} type="text" placeholder='Nombre del Evento' />
+                    <input onChange={fecha} value={fechaEvento} type="date" placeholder='Fecha del Evento' />
+                    <input onChange={lugar} value={lugarEvento} type="text" placeholder='Lugar' />
+                    <input onChange={horaI} value={horaIEvento} type="time" placeholder='Hora Inicio' />
+                    <input onChange={horaF} value={horaFEvento} type="time" placeholder='Hora Fin' />
+                    <box-icon onClick={cargar} name='check'></box-icon>
+                </div>
             </div>
         </div>
     )

@@ -1,7 +1,7 @@
 import React from 'react'
 import HeaderAdmin from '../../components/Admin/HeaderAdmin'
 import AdminHabitantes from '../../components/Admin/AdminHabitantes'
-import AdminRegistro from '../../components/Admin/AdminRegistro'
+import AdminRegistroH from '../../components/Admin/AdminRegistroH'
 import FooterAdmin from '../../components/Admin/FooterAdmin'
 
 function HabitantesAd() {
@@ -9,7 +9,7 @@ function HabitantesAd() {
     <div>
         <HeaderAdmin />
         <AdminHabitantes />
-        <AdminRegistro />
+        <AdminRegistroH />
         <FooterAdmin />
     </div>
   )

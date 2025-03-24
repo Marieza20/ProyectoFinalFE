@@ -1,7 +1,7 @@
 import React from 'react'
 import HeaderAdmin from '../../components/Admin/HeaderAdmin'
 import HeaderRedAd from '../../components/Admin/HeaderRedAd'
-import InfoColaboracion from '../../components/InfoColaboracion'
+import InfoColaboracion from '../../components/Home/InfoColaboracion'
 import FooterAdmin from '../../components/Admin/FooterAdmin'
 
 function ColaboracionAd() {

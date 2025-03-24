@@ -1,7 +1,7 @@
 import React from 'react'
 import HeaderAdmin from '../../components/Admin/HeaderAdmin'
-import FooterAdmin from '../../components/Admin/FooterAdmin'
 import AcercaDe from '../../components/Home/AcercaDe'
+import FooterAdmin from '../../components/Admin/FooterAdmin'
 
 function HomeAd() {
   return (

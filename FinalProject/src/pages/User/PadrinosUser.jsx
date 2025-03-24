@@ -1,7 +1,7 @@
 import React from 'react'
 import HeaderUser from '../../components/User/HeaderUser'
 import HeaderRedUser from '../../components/User/HeaderRedUser'
-import InfoPadrinos from '../../components/InfoPadrinos'
+import InfoPadrinos from '../../components/Home/InfoPadrinos'
 import FooterUser from '../../components/User/FooterUser'
 
 function PadrinosUser() {
