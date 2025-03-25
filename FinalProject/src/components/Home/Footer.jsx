@@ -5,7 +5,7 @@ import '../../styles/Footer.css'
 
 function Footer() {
   return (
-    <div>
+    <div id='div'>
         <nav id='footer'>
             <div id='divF'>
                 

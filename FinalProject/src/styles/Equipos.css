@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+body{
+    width: 100%;
+}
+
+#div{
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+
 #ContainerF{
     margin: auto;
     width: 300px;
@@ -47,7 +57,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
 }
-
+ 
 li{
     list-style: none;
 }

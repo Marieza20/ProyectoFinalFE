@@ -1,16 +1,16 @@
 import React from 'react'
 import HeaderAdmin from '../../components/Admin/HeaderAdmin'
-import AcercaDe from '../../components/Home/AcercaDe'
+import Perfil from '../../components/User/Perfil'
 import FooterAdmin from '../../components/Admin/FooterAdmin'
 
-function HomeAd() {
+function PerfilAd() {
   return (
     <div id='div'>
         <HeaderAdmin />
-        <AcercaDe />
+        <Perfil />
         <FooterAdmin />
     </div>
   )
 }
 
-export default HomeAd
+export default PerfilAd

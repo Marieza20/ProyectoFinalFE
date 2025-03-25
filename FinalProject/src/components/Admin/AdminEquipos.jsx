@@ -28,7 +28,7 @@ function AdminEquipos() {
   }
 
   return (
-    <div>
+    <div id='div'>
       <div id="ContainerF">
         <div id='FormEquipo'>
           <input onChange={nombre} value={nombreEquipo} type="text" placeholder='Nombre del Equipo' />

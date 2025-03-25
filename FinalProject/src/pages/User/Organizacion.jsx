@@ -5,7 +5,7 @@ import FooterUser from '../../components/User/FooterUser'
 
 function Organizacion() {
   return (
-    <div>
+    <div id='div'>
         <HeaderUser />
         <Equipos />
         <FooterUser />

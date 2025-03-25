@@ -121,7 +121,7 @@ function AdminRegistroH() {
     }
 
     return (
-        <div>
+        <div id='div'>
             <div id='Container'>
                 {habitantes.map((habitante,index) =>(
                 <li key={index}>

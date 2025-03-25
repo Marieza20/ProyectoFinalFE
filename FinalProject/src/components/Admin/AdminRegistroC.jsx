@@ -78,7 +78,7 @@ function AdminRegistroC() {
     }
 
     return (
-        <div>
+        <div id='div'>
             <div id='Container'>
                 {eventos.map((evento,index) =>(
                 <li key={index}>

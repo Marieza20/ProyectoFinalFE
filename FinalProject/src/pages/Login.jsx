@@ -3,7 +3,7 @@ import FormLog from '../components/FormLog'
 
 function Login() {
   return (
-    <div>
+    <div id='div'>
         <FormLog />
     </div>
   )

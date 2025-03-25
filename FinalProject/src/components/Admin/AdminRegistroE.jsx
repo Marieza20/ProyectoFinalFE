@@ -74,7 +74,7 @@ function AdminRegistroE() {
     }
     
     return (
-        <div>
+        <div id='div'>
             <div id='Container'>
                 {equipos.map((equipo,index) =>(
                 <li key={index}>

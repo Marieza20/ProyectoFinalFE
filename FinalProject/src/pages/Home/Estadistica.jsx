@@ -1,14 +1,13 @@
 import React from 'react'
 import Header from '../../components/Home/Header'
+import EstadísticaCard from '../../components/Home/EstadísticaCard'
 import Footer from '../../components/Home/Footer'
 
 function Estadistica() {
   return (
-    <div>
+    <div id='div'>
         <Header />
-
-        Esta es la página Estadistica
-
+        <EstadísticaCard />
         <Footer />
     </div>
   )

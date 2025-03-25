@@ -6,7 +6,7 @@ import FooterAdmin from '../../components/Admin/FooterAdmin'
 
 function OrganizacionAd() {
   return (
-    <div>
+    <div id='div'>
         <HeaderAdmin />
         <AdminEquipos />
         <AdminRegistroE />

@@ -6,7 +6,7 @@ import InfoDonacion from '../../components/Home/InfoDonacion'
 
 function Red() {
   return (
-    <div>
+    <div id='div'>
         <Header />
         <HeaderRed />
         <InfoDonacion />

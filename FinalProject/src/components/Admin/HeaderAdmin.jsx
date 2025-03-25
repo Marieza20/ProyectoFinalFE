@@ -4,7 +4,7 @@ import '../../styles/Header.css'
 
 function HeaderAdmin() {
   return (
-    <div>
+    <div id='div'>
         <nav id='nav'>
             <ul id='ul1'>
                 <li><Link id='Link' to="/habitantesAd">Registro</Link></li>
@@ -12,7 +12,7 @@ function HeaderAdmin() {
                 <li><Link id='Link' to="/agendaAd">Agenda</Link></li>
             </ul>
             <ul id='ul2'>
-                <li><Link id='Link' to="/perfil">Mi Cuenta</Link></li>
+                <li><Link id='Link' to="/perfilAd">Mi Cuenta</Link></li>
             </ul>
         </nav>
 

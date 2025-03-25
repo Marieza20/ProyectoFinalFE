@@ -4,7 +4,7 @@ import '../../styles/Header.css'
 
 function Header() {
   return (
-    <div>
+    <div id='div'>
       <nav id='nav'>
         <ul id='ul1'>
           <li><Link id='Link' to="/">Acerca de</Link></li>

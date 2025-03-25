@@ -68,7 +68,7 @@ function Admin() {
     }
 
     return (
-        <div>
+        <div id='div'>
             <div id='ContainerF'>
                 <div id="FormEquipo">
                     <input onChange={apodo} value={apodoHabitante} type="text" placeholder='Apodo' />
@@ -129,7 +129,6 @@ function Admin() {
                         <option value="Sí">Sí</option>
                         <option value="No">No</option>
                     </select>
-                    
                     <input onClick={cargar} type="button" value="Agregar" />
                 </div>
             </div>

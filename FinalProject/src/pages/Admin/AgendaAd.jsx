@@ -6,11 +6,11 @@ import FooterAdmin from '../../components/Admin/FooterAdmin'
 
 function AgendaAd() {
   return (
-    <div>
-        <HeaderAdmin />
-        <AdminCalendario />
-        <AdminRegistroC />
-        <FooterAdmin />
+    <div id='div'>
+      <HeaderAdmin />
+      <AdminCalendario />
+      <AdminRegistroC />
+      <FooterAdmin />
     </div>
   )
 }

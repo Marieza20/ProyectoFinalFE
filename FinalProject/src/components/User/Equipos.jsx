@@ -14,16 +14,20 @@ function Equipos() {
   },[]);
       
   return (
-    <div>
-      <div>
-          {equipos.map((equipo,index) =>(
+    <div id='div'>
+      <div id="Container">
+        {equipos.map((equipo,index) =>(
           <li key={index}>
-              <p><strong>{equipo.nombre}</strong></p>
-              <p><strong>Encargado: </strong>{equipo.encargado}</p>
+            <div id="Card">
+              <div>
+                <p><strong>{equipo.nombre}</strong></p>
+                <p><strong>Encargado: </strong>{equipo.encargado}</p>
+              </div>
               <p>{equipo.descripcion}</p>
               <input type="button" value="Unirme al grupo" />
-          </li>
-          ))}
+            </div>
+        </li>
+        ))}
       </div>
     </div>
   )

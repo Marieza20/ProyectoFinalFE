@@ -6,7 +6,7 @@ import HeaderRed from '../../components/Home/HeaderRed'
 
 function Padrinos() {
   return (
-    <div>
+    <div id='div'>
         <Header />
         <HeaderRed />
         <InfoPadrinos />

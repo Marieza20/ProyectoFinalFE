@@ -6,7 +6,7 @@ import Footer from '../../components/Home/Footer'
 
 function Colaboracion() {
   return (
-    <div>
+    <div id='div'>
         <Header />
         <HeaderRed />
         <InfoColaboracion />

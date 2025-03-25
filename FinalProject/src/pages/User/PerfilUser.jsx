@@ -1,16 +1,16 @@
 import React from 'react'
 import HeaderUser from '../../components/User/HeaderUser'
-import PerfilUser from '../../components/User/PerfilUser'
+import Perfil from '../../components/User/Perfil'
 import FooterUser from '../../components/User/FooterUser'
 
-function Perfil() {
+function PerfilUser() {
   return (
-    <div>
+    <div id='div'>
         <HeaderUser />
-        <PerfilUser />
+        <Perfil />
         <FooterUser />
     </div>
   )
 }
 
-export default Perfil
+export default PerfilUser

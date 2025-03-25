@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function HeaderRedUser() {
   return (
-    <div>
+    <div id='div'>
         <nav id='nav2'>
             <ul id='ulH'>
                 <li><Link id='Link' to="/redUser">Donaciones</Link></li>

@@ -4,7 +4,7 @@ import FooterAdmin from '../../components/Admin/FooterAdmin'
 
 function EstadisticaAd() {
   return (
-    <div>
+    <div id='div'>
         <HeaderAdmin />
         <FooterAdmin />
     </div>

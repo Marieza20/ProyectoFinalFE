@@ -4,21 +4,76 @@
     box-sizing: border-box;
 }
 
+body{
+    width: 100%;
+}
+
+#div{
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+
 #container{
     margin: auto;
-    width: 90%;
+    width: 100%;
     display: flex;
-    gap: 40px;
+    gap: 20px;
+}
+
+#containerR{
+    margin: auto;
+    width: 100%;
+    display: grid;
+    gap: 20px;
 }
 
 #aside{
+    margin: auto;
     width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 #main{
-    width: 70%;
+    margin: auto;
+    width: 60%;
+    display: grid;
+    gap: 50px;
+}
+
+#section{
+    margin: auto;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#cajitaImg{
+    background-color: rgb(104, 104, 104);
+    width: 200px;
+    height: 150px;
+}
+
+#cajaImg{
+    width: 300px;
+    height: 200px;
 }
 
 #img{
     width: 100%;
+}
+
+#InfoMain{
+    text-align: center;
+}
+
+#Info{
+    text-align: justify;
+}
+
+#map{
+    width: 100%;
+    height: 100%;
 }

@@ -6,7 +6,7 @@ import FooterAdmin from '../../components/Admin/FooterAdmin'
 
 function RedAd() {
   return (
-    <div>
+    <div id='div'>
         <HeaderAdmin />
         <HeaderRedAd />
         <InfoDonacion />

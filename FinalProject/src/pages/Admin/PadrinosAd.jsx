@@ -6,7 +6,7 @@ import FooterAdmin from '../../components/Admin/FooterAdmin'
 
 function PadrinosAd() {
   return (
-    <div>
+    <div id='div'>
         <HeaderAdmin />
         <HeaderRedAd />
         <InfoPadrinos />

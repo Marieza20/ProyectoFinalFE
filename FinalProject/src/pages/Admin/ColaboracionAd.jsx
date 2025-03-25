@@ -6,7 +6,7 @@ import FooterAdmin from '../../components/Admin/FooterAdmin'
 
 function ColaboracionAd() {
   return (
-    <div>
+    <div id='div'>
         <HeaderAdmin />
         <HeaderRedAd />
         <InfoColaboracion />

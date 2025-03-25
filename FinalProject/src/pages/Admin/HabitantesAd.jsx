@@ -6,7 +6,7 @@ import FooterAdmin from '../../components/Admin/FooterAdmin'
 
 function HabitantesAd() {
   return (
-    <div>
+    <div id='div'>
         <HeaderAdmin />
         <AdminHabitantes />
         <AdminRegistroH />

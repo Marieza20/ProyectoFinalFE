@@ -6,7 +6,7 @@ import FooterUser from '../../components/User/FooterUser'
 
 function RedUser() {
   return (
-    <div>
+    <div id='div'>
         <HeaderUser />
         <HeaderRedUser />
         <InfoDonacion />

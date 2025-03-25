@@ -5,7 +5,7 @@ import FooterUser from '../../components/User/FooterUser'
 
 function HomeUser() {
   return (
-    <div>
+    <div id='div'>
       <HeaderUser />
       <AcercaDe />
       <FooterUser />

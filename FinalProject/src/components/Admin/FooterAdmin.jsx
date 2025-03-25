@@ -5,7 +5,7 @@ import '../../styles/Footer.css'
 
 function FooterAdmin() {
   return (
-    <div>
+    <div id='div'>
         <nav id='footer'>
             <div>
                 

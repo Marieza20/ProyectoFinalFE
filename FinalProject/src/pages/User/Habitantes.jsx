@@ -5,10 +5,10 @@ import FooterUser from '../../components/User/FooterUser'
 
 function Habitantes() {
   return (
-    <div>
-        <HeaderUser />
-        <RegistroHabitantes />
-        <FooterUser />
+    <div id='div'>
+      <HeaderUser />
+      <RegistroHabitantes />
+      <FooterUser />
     </div>
   )
 }

@@ -33,7 +33,7 @@ function AdminCalendario() {
     }
 
     return (
-        <div>
+        <div id='div'>
             <div id='ContainerF'>
                 <div id="FormEquipo">
                     <input onChange={nombre} value={nombreEvento} type="text" placeholder='Nombre del Evento' />

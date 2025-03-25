@@ -23,7 +23,8 @@ import ColaboracionAd from '../pages/Admin/ColaboracionAd';
 import HabitantesAd from '../pages/Admin/HabitantesAd';
 import OrganizacionAd from '../pages/Admin/OrganizacionAd';
 import AgendaAd from '../pages/Admin/AgendaAd';
-import Perfil from '../pages/User/Perfil';
+import PerfilUser from '../pages/User/PerfilUser';
+import PerfilAd from '../pages/Admin/PerfilAd';
 
 function Routing() {
   return (
@@ -53,7 +54,8 @@ function Routing() {
                 <Route path='/habitantesAd' element={<HabitantesAd/>}></Route>
                 <Route path='/organizacionAd' element={<OrganizacionAd/>}></Route>
                 <Route path='/agendaAd' element={<AgendaAd/>}></Route>
-                <Route path='/perfil' element={<Perfil/>}></Route>
+                <Route path='/perfilUser' element={<PerfilUser/>}></Route>
+                <Route path='/perfilAd' element={<PerfilAd/>}></Route>
             </Routes>
         </Router>
     </div>
