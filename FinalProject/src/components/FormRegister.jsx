@@ -46,6 +46,7 @@ function FormRegister() {
   return (
     <div id='div'>
       <div id='FormLog'>
+        <h3>Registro de Usuarios</h3>
         <div id='block'>
           <label htmlFor="nombre">Nombre Completo:</label>
           <input onChange={nombre} value={nombreUser} type="text" id='nombre' />
@@ -88,7 +89,7 @@ function FormRegister() {
           <label htmlFor="password">Contraseña:</label>
           <input onChange={password} value={passwordUser} type="password" id='password' />
         </div>
-        <input onClick={cargar} type="button" value="Registrarse" />
+        <input onClick={cargar} type="button" value="Registrarse" id='btn' />
         <p>¿Ya tienes una cuenta? <Link to="/login">Inicia Aquí</Link></p>
       </div>
     </div>

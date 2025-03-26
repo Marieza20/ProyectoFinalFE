@@ -1,12 +1,16 @@
 import React from 'react'
 import { Link, useNavigate } from 'react-router-dom';
-import '../../styles/Header.css'
+import Logo from '../../img/logo.jpg';
+import '../../styles/Header.css';
 
 function HeaderAdmin() {
   return (
     <div id='div'>
         <nav id='nav'>
             <ul id='ul1'>
+                <div id="Logo">
+                    <img src={Logo} alt="" />
+                </div>
                 <li><Link id='Link' to="/habitantesAd">Registro</Link></li>
                 <li><Link id='Link' to="/organizacionAd">Organización</Link></li>
                 <li><Link id='Link' to="/agendaAd">Agenda</Link></li>

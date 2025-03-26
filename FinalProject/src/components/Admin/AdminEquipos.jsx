@@ -30,7 +30,8 @@ function AdminEquipos() {
   return (
     <div id='div'>
       <div id="ContainerF">
-        <div id='FormEquipo'>
+        <div id='Form'>
+          <h3>Añadir Equipos de Trabajo</h3>
           <input onChange={nombre} value={nombreEquipo} type="text" placeholder='Nombre del Equipo' />
           <input onChange={encargado} value={encargadoEquipo} type="text" placeholder='Encargado del Equipo' />
           <textarea onChange={descripcion} value={descripcionEquipo} placeholder='Descripción'></textarea>

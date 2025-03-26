@@ -35,7 +35,8 @@ function AdminCalendario() {
     return (
         <div id='div'>
             <div id='ContainerF'>
-                <div id="FormEquipo">
+                <div id="Form">
+                    <h3>Añadir Eventos</h3>
                     <input onChange={nombre} value={nombreEvento} type="text" placeholder='Nombre del Evento' />
                     <input onChange={fecha} value={fechaEvento} type="date" placeholder='Fecha del Evento' />
                     <input onChange={lugar} value={lugarEvento} type="text" placeholder='Lugar' />

@@ -104,6 +104,22 @@
       "horai": "08:00",
       "horaf": "12:00",
       "id": "0fd9"
+    },
+    {
+      "id": "0398",
+      "nombre": "Inducción",
+      "fecha": "2025-03-04",
+      "lugar": "Salón del 20 de Noviembre",
+      "horai": "06:00",
+      "horaf": "08:00"
+    },
+    {
+      "id": "9162",
+      "nombre": "Primer Comedor",
+      "fecha": "2025-04-05",
+      "lugar": "Salón de Fray Casiano",
+      "horai": "13:00",
+      "horaf": "14:30"
     }
   ]
 }

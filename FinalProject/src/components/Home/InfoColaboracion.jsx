@@ -22,7 +22,7 @@ function InfoColaboracion() {
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium hic quaerat officiis explicabo saepe est distinctio possimus perspiciatis, repudiandae eaque.</p>
           </div>
         </div>
-        </div>
+      </div>
     </div>
   )
 }

@@ -70,7 +70,8 @@ function Admin() {
     return (
         <div id='div'>
             <div id='ContainerF'>
-                <div id="FormEquipo">
+                <div id="Form">
+                    <h3>Añadir Registro</h3>
                     <input onChange={apodo} value={apodoHabitante} type="text" placeholder='Apodo' />
                     <input onChange={nombre} value={nombreHabitante} type="text" placeholder='Nombre' />
                     <input onChange={edad} value={edadHabitante} type="number" placeholder='Edad' />

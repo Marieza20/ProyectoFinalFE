@@ -27,6 +27,10 @@ body{
     border-radius: 10px;
 }
 
+#FormLog h3{
+    text-align: center;
+}
+
 #block{
     display: flex;
     flex-direction: column;
@@ -34,5 +38,14 @@ body{
 }
 
 #block input{
+    padding: 3px;
+    outline: none;
+}
+
+#block select{
+    padding: 5px;
+}
+
+#btn{
     padding: 3px;
 }

@@ -43,6 +43,7 @@ function FormLog() {
   return (
     <div id='div'>
       <div id='FormLog'>
+        <h3>Iniciar Sesión</h3>
         <div id='block'>
           <label htmlFor="nombre">Teléfono o Correo:</label>
           <input onChange={nombre} value={nombreUser} type="text" id='nombre' />

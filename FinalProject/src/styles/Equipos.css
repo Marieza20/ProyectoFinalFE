@@ -30,24 +30,34 @@ body{
     border-radius: 10px;
 }
 
-#FormEquipo{
+#Form{
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-#FormEquipo input{
+#Form input{
     padding: 5px;
     outline: none;
     width: 260px;
 }
 
-#FormEquipo textarea{
+#Form select{
+    padding: 5px;
+    outline: none;
+    width: 260px;
+}
+
+#Form textarea{
     max-width: 260px;
     min-width: 260px;
     min-height: 100px;
     padding: 5px;
     outline: none;
+}
+
+#Form h3{
+    text-align: center;
 }
 
 #Container{
@@ -56,13 +66,14 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding-bottom: 200px;
 }
- 
+
 li{
     list-style: none;
 }
 
-#Card{
+#CardEquipos{
     margin-top: 20px;
     width: 350px;
     min-height: 220px;

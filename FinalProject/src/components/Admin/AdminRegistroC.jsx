@@ -1,6 +1,6 @@
 import React, { useState,useEffect } from 'react'
 import llamadosEventos from '../../services/llamadosEventos';
-import Swal from 'sweetalert2'
+import Swal from 'sweetalert2';
 
 function AdminRegistroC() {
     const [eventos, setEventos]=useState([])
@@ -85,10 +85,12 @@ function AdminRegistroC() {
                     <div id='Card'>
                         <h2><button type="button">{evento.fecha}</button></h2>
                         <div>
-                            <p>{evento.nombre}</p>
-                            <p>{evento.lugar}</p>
-                            <p>{evento.horai}</p>
-                            <p>{evento.horaf}</p>
+                            <strong>{evento.nombre}</strong>
+                            <p><strong>Lugar: </strong>{evento.lugar}</p>
+                            <p><strong>Hora de Inicio: </strong>{evento.horai}</p>
+                            <p><strong>Hora de Finalización: </strong>{evento.horaf}</p>
+                        </div>
+                        <div>
                             <box-icon id='icono' onClick={e=>editar(evento.id)} type='solid' name='pencil'></box-icon>
                             <box-icon id='icono' onClick={e=>eliminar(evento.id)} type='solid' name='trash-alt'></box-icon>
                         </div>

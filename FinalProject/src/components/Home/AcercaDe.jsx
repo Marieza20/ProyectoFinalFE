@@ -1,22 +1,21 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import '../../styles/Prueba.css';
 import '../../styles/AcercaDe.css';
 import ps from '../../img/ps.jpg';
 import ps2 from '../../img/ps2.jpg';
 import Logo from '../../img/logo.jpg';
-import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet'
+import rc from '../../img/rc.jpg';
 
 function AcercaDe() {
-    const position = [51.505, -0.09]
-
     return (
         <div id='div'>
+            <div id="ImgMain">
+                <img src={rc} alt="" />
+            </div>
             <div id="container">
                 <aside id='aside'>
                     <section>
                         <img id='img' src={ps2} alt="" />
-                    </section>
-                    <section>
                         <img id='img' src={ps} alt="" />
                     </section>
                 </aside>
@@ -43,22 +42,6 @@ function AcercaDe() {
                         <div>
                             <h3>Entrevista completa con Sione González, coordinadora del proyecto</h3>
                             <div id="cajaG"></div>
-                        </div>
-                    </section>
-
-                    <section>
-                        <div id="map">
-                            <MapContainer center={position} zoom={13} scrollWheelZoom={false}>
-                                <TileLayer
-                                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                                />
-                                <Marker position={position}>
-                                <Popup>
-                                    A pretty CSS3 popup. <br /> Easily customizable.
-                                </Popup>
-                                </Marker>
-                            </MapContainer>
                         </div>
                     </section>
                 </main>

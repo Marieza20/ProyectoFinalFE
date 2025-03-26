@@ -78,7 +78,7 @@ function AdminRegistroE() {
             <div id='Container'>
                 {equipos.map((equipo,index) =>(
                 <li key={index}>
-                    <div id="Card">
+                    <div id="CardEquipos">
                         <div>
                             <h3>{equipo.nombre}</h3>
                             <p><strong>Encargado: </strong>{equipo.encargado}</p>

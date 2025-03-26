@@ -15,14 +15,13 @@ body{
 }
 
 #nav{
-    background-color: rgb(185, 185, 185);
-    height: 60px;
+    background-color: #172830;
+    height: 70px;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    gap: 20px;
     align-items: center;
-    margin-bottom: 30px;
+    gap: 20px;
 }
 
 #ul1{
@@ -30,12 +29,25 @@ body{
     display: flex;
     list-style: none;
     justify-content: space-around;
+    align-items: center;
+    color: #fff;
+}
+
+#Logo{
+    height: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+#Logo img{
+    height: 100%;
 }
 
 #ul2{
     width: 20%;
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
     list-style: none;
 }
 
@@ -43,27 +55,54 @@ body{
     text-decoration: none;
     color: black;
     cursor: pointer;
+    color: #fff;
+    transition: 0.3s;
 }
 
 box-icon{
     cursor: pointer;
+    transition: 0.3s;
+}
+
+box-icon:hover{
+    transform: scale(0.9);
 }
 
 #nav2{
     margin: auto;
     width: 60%;
+    display: flex;
     align-items: center;
-    margin-bottom: 30px;
+    justify-content: center;
 }
 
 #ulH{
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    gap: 5px;
 }
 
 #ulH li{
     padding: 10px;
-    border-radius: 8px;
+}
+
+#ulH #Link{
+    color: #172830;
+}
+
+#ulH li:hover{
+    border-radius: 20px;
     background-color: rgb(185, 185, 185);
+}
+
+#btnLogin{
+    padding: 10px 15px;
+    border-radius: 20px;
+    background-color: rgb(119, 119, 119);
+    transition: 0.5s;
+}
+
+#btnLogin:hover{
+    border: 1px solid rgb(119, 119, 119);
+    background: none;
 }

@@ -1,21 +1,24 @@
 import React from 'react'
 import { Link, useNavigate } from 'react-router-dom';
-import 'boxicons'
-import '../../styles/Footer.css'
+import 'boxicons';
+import Logo from '../../img/logo.jpg';
+import '../../styles/Footer.css';
 
 function FooterUser() {
   return (
     <div id='div'>
         <nav id='footer'>
-            <div>
-                
+            <div id='divF'>
+                <div id="Logo">
+                    <img src={Logo} alt="" />
+                </div>
                 <ul id='ulF'>
-                    <li><box-icon type='logo' name='whatsapp'></box-icon></li>
-                    <li><box-icon type='logo' name='facebook'></box-icon></li>
-                    <li><box-icon type='logo' name='instagram-alt'></box-icon></li>
+                    <li><box-icon type='logo' name='whatsapp' color='#fff'></box-icon></li>
+                    <li><box-icon type='logo' name='facebook' color='#fff'></box-icon></li>
+                    <li><box-icon type='logo' name='instagram-alt' color='#fff'></box-icon></li>
                 </ul>
             </div>
-            <div>
+            <div id='divF'>
                 <h3 id='h3'>Navegación</h3>
                 <ul id='ul'>
                     <li><Link id='Link' to="/homeUser">Acerca de</Link></li>
@@ -23,7 +26,7 @@ function FooterUser() {
                     <li><Link id='Link' to="/redUser">Red de Apoyo</Link></li>
                 </ul>
             </div>
-            <div>
+            <div id='divF'>
                 <h3 id='h3'>Navegación</h3>
                 <ul id='ul'>
                     <li><Link id='Link' to="/habitantes">Registro</Link></li>
@@ -31,7 +34,7 @@ function FooterUser() {
                     <li><Link id='Link' to="/agenda">Agenda</Link></li>
                 </ul>
             </div>
-            <div>
+            <div id='divF'>
                 <h3 id='h3'>Contactos</h3>
                 <ul id='ul'>
                     <li>Coordinadora Rostro de Cristo</li>
