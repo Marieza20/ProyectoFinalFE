@@ -77,6 +77,14 @@ function AdminRegistroC() {
         });
     }
 
+    // Ordenamos los eventos por fecha (convertimos fecha a objetos Date)
+    const eventosOrdenados = eventos.sort((a, b) => {
+        const fechaA = new Date(a.fecha);
+        const fechaB = new Date(b.fecha);
+        return fechaA - fechaB;
+    });
+
+
     return (
         <div id='div'>
             <div id='Container'>
@@ -96,13 +104,15 @@ function AdminRegistroC() {
                         </div>
                     </div>
                     {editandoId === evento.id && (
-                    <div id="ContainerFE" className="mostrar">
-                        <input onChange={nombre} value={nombreEvento} type="text" />
-                        <input onChange={fecha} value={fechaEvento} type="date" />
-                        <input onChange={lugar} value={lugarEvento} type="text" />
-                        <input onChange={horaI} value={horaIEvento} type="time" />
-                        <input onChange={horaF} value={horaFEvento} type="time" />
-                        <box-icon onClick={e=>cargar(evento.id)} name='check'></box-icon>
+                    <div id="ContainerF" className="mostrar">
+                        <div id="Form">
+                            <input onChange={nombre} value={nombreEvento} type="text" />
+                            <input onChange={fecha} value={fechaEvento} type="date" />
+                            <input onChange={lugar} value={lugarEvento} type="text" />
+                            <input onChange={horaI} value={horaIEvento} type="time" />
+                            <input onChange={horaF} value={horaFEvento} type="time" />
+                            <box-icon onClick={e=>cargar(evento.id)} name='check'></box-icon>
+                        </div>
                     </div>
                     )}
                 </li>

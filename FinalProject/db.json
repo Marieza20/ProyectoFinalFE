@@ -64,6 +64,83 @@
       "atencionPsi": "No",
       "laboral": "Sí",
       "id": "e5dc"
+    },
+    {
+      "zona": "San Luis",
+      "alimentacion": "Una vez por semana",
+      "estudios": "Sin Estudios",
+      "enfermedades": "No",
+      "medicamentos": "No",
+      "atencionMed": "No",
+      "atencionPsi": "No",
+      "laboral": "No",
+      "id": "ea50"
+    },
+    {
+      "zona": "Porvenir",
+      "alimentacion": "Una vez por semana",
+      "estudios": "Primaria completa",
+      "enfermedades": "No",
+      "medicamentos": "No",
+      "atencionMed": "No",
+      "atencionPsi": "No",
+      "laboral": "Sí",
+      "id": "d616"
+    },
+    {
+      "zona": "20 de Noviembre",
+      "alimentacion": "Una vez por semana",
+      "estudios": "Sin Estudios",
+      "enfermedades": "No",
+      "medicamentos": "No",
+      "atencionMed": "No",
+      "atencionPsi": "No",
+      "laboral": "No",
+      "id": "9395"
+    },
+    {
+      "zona": "20 de Noviembre",
+      "alimentacion": "Una vez por semana",
+      "estudios": "Secundaria incompleta",
+      "enfermedades": "Sí",
+      "medicamentos": "Sí",
+      "atencionMed": "No",
+      "atencionPsi": "No",
+      "laboral": "No",
+      "id": "dae3"
+    },
+    {
+      "zona": "20 de Noviembre",
+      "alimentacion": "Una vez por semana",
+      "estudios": "Sin Estudios",
+      "enfermedades": "No",
+      "medicamentos": "No",
+      "atencionMed": "No",
+      "atencionPsi": "No",
+      "laboral": "No",
+      "id": "d5f3"
+    },
+    {
+      "zona": "20 de Noviembre",
+      "alimentacion": "Una vez por semana",
+      "estudios": "Secundaria completa",
+      "enfermedades": "No",
+      "medicamentos": "No",
+      "atencionMed": "No",
+      "atencionPsi": "No",
+      "laboral": "Sí",
+      "id": "51d9"
+    },
+    {
+      "zona": "20 de Noviembre",
+      "alimentacion": "Una vez por semana",
+      "estudios": "Sin Estudios",
+      "enfermedades": "No",
+      "medicamentos": "No",
+      "atencionMed": "No",
+      "atencionPsi": "Sí",
+      "laboral": "No",
+      "id": "e228"
     }
   ],
   "equipos": [

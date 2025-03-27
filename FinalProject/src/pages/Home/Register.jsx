@@ -1,16 +1,16 @@
 import React from 'react'
 import Header from '../../components/Home/Header'
-import AcercaDe from '../../components/Home/AcercaDe'
+import FormRegister from '../../components/Home/FormRegister'
 import Footer from '../../components/Home/Footer'
 
-function Home() {
+function Register() {
   return (
     <div id='div'>
         <Header />
-        <AcercaDe />
+        <FormRegister />
         <Footer />
     </div>
   )
 }
 
-export default Home
+export default Register

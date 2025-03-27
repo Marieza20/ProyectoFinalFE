@@ -86,7 +86,7 @@ function Admin() {
                         <option value="San Luis">San Luis</option>
                         <option value="Santa Eduviges">Santa Eduviges</option>
                         <option value="Fray Casiano">Fray Casiano</option>
-                        <option value="Fuera de Chacarita">Fuera de Chacarita</option>
+                        <option value="Otro">Fuera de Chacarita</option>
                     </select>
                     <select onChange={alimentacion} value={alimentacionHabitante}>
                         <option value="" selected>Frecuencia de la alimentación</option>

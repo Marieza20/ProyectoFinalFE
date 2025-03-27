@@ -1,16 +1,16 @@
 import React from 'react'
 import Header from '../../components/Home/Header'
-import AcercaDe from '../../components/Home/AcercaDe'
+import FormLog from '../../components/Home/FormLog'
 import Footer from '../../components/Home/Footer'
 
-function Home() {
+function Login() {
   return (
     <div id='div'>
         <Header />
-        <AcercaDe />
+        <FormLog />
         <Footer />
     </div>
   )
 }
 
-export default Home
+export default Login

@@ -16,7 +16,9 @@ function HeaderUser() {
                 <li><Link id='Link' to="/agenda">Agenda</Link></li>
             </ul>
             <ul id='ul2'>
-                <li><Link id='Link' to="/perfilUser">Mi Cuenta</Link></li>
+                <div id="btnLogin">
+                    <li><Link id='Link' to="/perfilUser">Mi Cuenta</Link></li>
+                </div>
             </ul>
         </nav>
 

@@ -16,6 +16,7 @@ body{
 
 #ContainerF{
     margin: auto;
+    margin-top: 30px;
     width: 300px;
     padding: 20px;
     border: 1px solid #696969;
@@ -26,6 +27,8 @@ body{
     margin: auto;
     width: 300px;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
     border: 1px solid #696969;
     border-radius: 10px;
 }
@@ -84,7 +87,16 @@ li{
     grid-template-rows: 30% 60% 10%;
 }
 
-#btn{
+#CardHabitantes{
+    margin-top: 20px;
+    width: 240px;
+    min-height: 220px;
+    padding: 20px;
+    border: 1px solid #696969;
+    border-radius: 10px;
+}
+
+#btnCRUD{
     display: grid;
     grid-template-columns: 50% 20%;
     justify-content: space-between;

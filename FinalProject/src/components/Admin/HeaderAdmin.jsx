@@ -16,7 +16,9 @@ function HeaderAdmin() {
                 <li><Link id='Link' to="/agendaAd">Agenda</Link></li>
             </ul>
             <ul id='ul2'>
-                <li><Link id='Link' to="/perfilAd">Mi Cuenta</Link></li>
+                <div id="btnLogin">
+                    <li><Link id='Link' to="/perfilAd">Mi Cuenta</Link></li>
+                </div>
             </ul>
         </nav>
 

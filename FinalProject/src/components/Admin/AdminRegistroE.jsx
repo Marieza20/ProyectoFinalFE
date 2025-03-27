@@ -84,7 +84,7 @@ function AdminRegistroE() {
                             <p><strong>Encargado: </strong>{equipo.encargado}</p>
                         </div>
                         <p>{equipo.descripcion}</p>
-                        <div id='btn'>
+                        <div id='btnCRUD'>
                             <input type="button" value="Unirme al grupo" />
                             <div>
                                 <box-icon id='icono' onClick={e=>editar(equipo.id)} type='solid' name='pencil'></box-icon>
@@ -94,7 +94,7 @@ function AdminRegistroE() {
                     </div>
                     {editandoId === equipo.id && (
                     <div id="ContainerFE" className="mostrar">
-                        <div id='FormEquipo'>
+                        <div id='Form'>
                             <input onChange={nombre} value={nombreEquipo} type="text" />
                             <input onChange={encargado} value={encargadoEquipo} type="text" />
                             <textarea onChange={descripcion} value={descripcionEquipo}></textarea>
