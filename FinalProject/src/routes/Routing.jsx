@@ -25,9 +25,10 @@ import OrganizacionAd from '../pages/Admin/OrganizacionAd';
 import AgendaAd from '../pages/Admin/AgendaAd';
 import PerfilUser from '../pages/User/PerfilUser';
 import PerfilAd from '../pages/Admin/PerfilAd';
+import ProtectedRoutes from '../components/ProtectedRoutes'
 
 function Routing() {
-  return (
+  return(
     <div>
         <Router>
             <Routes>
@@ -38,24 +39,30 @@ function Routing() {
                 <Route path='/red' element={<Red/>}></Route>
                 <Route path='/padrinos' element={<Padrinos/>}></Route>
                 <Route path='/colaboracion' element={<Colaboracion/>}></Route>
-                <Route path='/homeUser' element={<HomeUser/>}></Route>
-                <Route path='/estadisticaUser' element={<EstadisticaUser/>}></Route>
-                <Route path='/redUser' element={<RedUser/>}></Route>
-                <Route path='/padrinosUser' element={<PadrinosUser/>}></Route>
-                <Route path='/colaboracionUser' element={<ColaboracionUser/>}></Route>
-                <Route path='/habitantes' element={<Habitantes/>}></Route>
-                <Route path='/organizacion' element={<Organizacion/>}></Route>
-                <Route path='/agenda' element={<Agenda/>}></Route>
-                <Route path='/homeAd' element={<HomeAd/>}></Route>
-                <Route path='/estadisticaAd' element={<EstadisticaAd/>}></Route>
-                <Route path='/redAd' element={<RedAd/>}></Route>
-                <Route path='/padrinosAd' element={<PadrinosAd/>}></Route>
-                <Route path='/colaboracionAd' element={<ColaboracionAd/>}></Route>
-                <Route path='/habitantesAd' element={<HabitantesAd/>}></Route>
-                <Route path='/organizacionAd' element={<OrganizacionAd/>}></Route>
-                <Route path='/agendaAd' element={<AgendaAd/>}></Route>
-                <Route path='/perfilUser' element={<PerfilUser/>}></Route>
-                <Route path='/perfilAd' element={<PerfilAd/>}></Route>
+
+                <Route element={<ProtectedRoutes />}>
+                  <Route path='/homeUser' element={<HomeUser/>}></Route>
+                  <Route path='/estadisticaUser' element={<EstadisticaUser/>}></Route>
+                  <Route path='/redUser' element={<RedUser/>}></Route>
+                  <Route path='/padrinosUser' element={<PadrinosUser/>}></Route>
+                  <Route path='/colaboracionUser' element={<ColaboracionUser/>}></Route>
+                  <Route path='/habitantes' element={<Habitantes/>}></Route>
+                  <Route path='/organizacion' element={<Organizacion/>}></Route>
+                  <Route path='/agenda' element={<Agenda/>}></Route>
+                  <Route path='/perfilUser' element={<PerfilUser/>}></Route>
+                </Route>
+
+                <Route element={<ProtectedRoutes isAdmin={true} />}>
+                  <Route path='/homeAd' element={<HomeAd/>}></Route>
+                  <Route path='/estadisticaAd' element={<EstadisticaAd/>}></Route>
+                  <Route path='/redAd' element={<RedAd/>}></Route>
+                  <Route path='/padrinosAd' element={<PadrinosAd/>}></Route>
+                  <Route path='/colaboracionAd' element={<ColaboracionAd/>}></Route>
+                  <Route path='/habitantesAd' element={<HabitantesAd/>}></Route>
+                  <Route path='/organizacionAd' element={<OrganizacionAd/>}></Route>
+                  <Route path='/agendaAd' element={<AgendaAd/>}></Route>
+                  <Route path='/perfilAd' element={<PerfilAd/>}></Route>
+                </Route>
             </Routes>
         </Router>
     </div>

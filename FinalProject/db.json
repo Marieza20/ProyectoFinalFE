@@ -41,7 +41,7 @@
       "edad": "43",
       "cedula": "704850948",
       "zona": "Fray Casiano",
-      "alimentacion": "1 vez por semana",
+      "alimentacion": "Una vez por semana",
       "estudios": "Sin Estudios",
       "enfermedades": "No",
       "medicamentos": "No",
@@ -56,7 +56,7 @@
       "edad": "56",
       "cedula": "602230654",
       "zona": "20 de Noviembre",
-      "alimentacion": "Una vez por quincena",
+      "alimentacion": "Una vez por semana",
       "estudios": "Primaria incompleta",
       "enfermedades": "No",
       "medicamentos": "No",
@@ -122,7 +122,7 @@
     },
     {
       "zona": "20 de Noviembre",
-      "alimentacion": "Una vez por semana",
+      "alimentacion": "Una vez por quincena",
       "estudios": "Secundaria completa",
       "enfermedades": "No",
       "medicamentos": "No",
@@ -132,15 +132,17 @@
       "id": "51d9"
     },
     {
-      "zona": "20 de Noviembre",
-      "alimentacion": "Una vez por semana",
-      "estudios": "Sin Estudios",
-      "enfermedades": "No",
-      "medicamentos": "No",
-      "atencionMed": "No",
-      "atencionPsi": "Sí",
-      "laboral": "No",
-      "id": "e228"
+      "id": "54fe"
+    },
+    {
+      "id": "4122",
+      "apodo": "hh"
+    },
+    {
+      "id": "aa90"
+    },
+    {
+      "id": "0e8b"
     }
   ],
   "equipos": [

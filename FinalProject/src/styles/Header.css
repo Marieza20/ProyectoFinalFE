@@ -19,17 +19,18 @@ body{
     height: 70px;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 50px;
 }
 
 #ul1{
     width: 60%;
     display: flex;
     list-style: none;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    gap: 30px;
     color: #fff;
 }
 
@@ -37,6 +38,7 @@ body{
     height: 60px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 #Logo img{
@@ -53,19 +55,9 @@ body{
 
 #Link{
     text-decoration: none;
-    color: black;
     cursor: pointer;
     color: #fff;
     transition: 0.3s;
-}
-
-box-icon{
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-box-icon:hover{
-    transform: scale(0.9);
 }
 
 #nav2{
@@ -99,6 +91,7 @@ box-icon:hover{
 #btnLogin{
     padding: 10px 15px;
     border-radius: 20px;
+    border: 1px solid rgb(119, 119, 119);
     background-color: rgb(119, 119, 119);
     transition: 0.5s;
 }
@@ -106,4 +99,13 @@ box-icon:hover{
 #btnLogin:hover{
     border: 1px solid rgb(119, 119, 119);
     background: none;
+}
+
+box-icon{
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+box-icon:hover{
+    transform: scale(0.9);
 }

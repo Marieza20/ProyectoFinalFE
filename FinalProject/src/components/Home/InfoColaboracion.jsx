@@ -4,7 +4,7 @@ function InfoColaboracion() {
   return (
     <div id='div'>
       <div id="main">
-        <div id='InfoMain'>
+        <div id='Info'>
           <h2>Colaboradores</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur sint perferendis corporis deserunt praesentium saepe voluptas laboriosam nostrum consequuntur minima distinctio quod deleniti porro expedita quibusdam corrupti ex fuga molestias, assumenda unde, delectus illo, repellat ratione officia. Tenetur incidunt facilis dignissimos sequi voluptatibus, architecto harum? Dolore repellat totam quod non?</p>
         </div>

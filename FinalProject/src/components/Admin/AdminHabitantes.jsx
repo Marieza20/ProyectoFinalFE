@@ -63,8 +63,9 @@ function Admin() {
         setlaboralHabitante(evento.target.value)
     }
 
-    async function cargar() {
+    function cargar() {
         llamadosHabitantes.post(apodoHabitante,nombreHabitante,edadHabitante,cedulaHabitante,zonaHabitante,alimentacionHabitante,estudiosHabitante,enfermedadesHabitante,medicamentosHabitante,atencionMedHabitante,atencionPsiHabitante,laboralHabitante)
+        
     }
 
     return (
@@ -130,7 +131,7 @@ function Admin() {
                         <option value="Sí">Sí</option>
                         <option value="No">No</option>
                     </select>
-                    <input onClick={cargar} type="button" value="Agregar" />
+                    <input onClick={cargar} type="button" value="Agregar" id='btn' />
                 </div>
             </div>
         </div>

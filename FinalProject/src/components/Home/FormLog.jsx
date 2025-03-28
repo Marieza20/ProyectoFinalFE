@@ -2,6 +2,8 @@ import React, { useState,useEffect } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 import llamadosUser from '../../services/llamadosUser';
 import '../../styles/Forms.css'
+import Swal from 'sweetalert2';
+import 'boxicons'
 
 function FormLog() {
   const [nombreUser, setNombreUser]=useState()
@@ -12,7 +14,7 @@ function FormLog() {
 
   useEffect(() => {
     async function fetchDataUsers(){
-      const datos = await llamadosUser.get()
+      const datos = await llamadosUser.getUser()
       setUsers(datos)
     };
     fetchDataUsers();
@@ -28,10 +30,19 @@ function FormLog() {
   function acceder() {
     const encontrado = users.find(user => (user.telefono===nombreUser || user.correo===nombreUser) && user.password===passwordUser)
 
-    if (encontrado.length===0) {
-      console.log("Usuario o contraseña incorrectos");
+    if (!encontrado) {
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Usuario o contraseña incorrecto",
+        showConfirmButton: false,
+        timer: 2000
+      });
+      setNombreUser("");
+      setPasswordUser("");
     }else{
-      localStorage.setItem("usuario",encontrado.id);
+      let list = [encontrado.id, encontrado.type]
+      localStorage.setItem("usuario",JSON.stringify(list));
       if (encontrado.type === "admin") {
         navigate('/homeAd')
       }else{
@@ -51,7 +62,10 @@ function FormLog() {
           </div>
           <div id='block'>
             <label htmlFor="password">Contraseña:</label>
-            <input onChange={password} value={passwordUser} type="password" id='password' />
+            <div className="btnInput">
+              <input onChange={password} value={passwordUser} type="password" id='password' />
+              <box-icon name='low-vision' className="input-icon"></box-icon>
+            </div>
           </div>
           <input onClick={acceder} type="button" value="Acceder" id='btn' />
           <p>¿No tienes cuenta? <Link to="/register">Regístrate Aquí</Link></p>

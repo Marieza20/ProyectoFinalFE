@@ -1,4 +1,4 @@
-async function get() {
+async function getUser() {
     try {
         const response = await fetch("http://localhost:3000/users", {
             method: 'GET',
@@ -102,4 +102,4 @@ async function deleteT(id) {
     }
 }
 
-export default { get, post, update, deleteT };
+export default { getUser, post, update, deleteT };

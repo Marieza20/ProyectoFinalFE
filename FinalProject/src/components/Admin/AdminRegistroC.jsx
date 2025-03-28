@@ -1,6 +1,7 @@
 import React, { useState,useEffect } from 'react'
 import llamadosEventos from '../../services/llamadosEventos';
 import Swal from 'sweetalert2';
+import 'boxicons'
 
 function AdminRegistroC() {
     const [eventos, setEventos]=useState([])

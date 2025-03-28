@@ -74,20 +74,16 @@ body{
     height: 150px;
 }
 
-#cajaImg{
-    width: 300px;
-}
-
 #img{
     width: 100%;
 }
 
-#InfoMain{
-    text-align: center;
-}
-
 #Info{
     text-align: justify;
+}
+
+#Info h2{
+    text-align: center;
 }
 
 #mapa{

@@ -9,8 +9,9 @@ function PerfilUser() {
 
   useEffect(() => {
     async function fetchDataUsers(){
-      const datos = await llamadosUser.get()
-      const loggedUser = datos.find(user => user.id === localStorage.getItem("usuario"));
+      const datos = await llamadosUser.getUser()
+      const usuario = JSON.parse(localStorage.getItem("usuario"))
+      const loggedUser = datos.find(user => user.id === usuario[0]);
       setUser(loggedUser);
     };
     fetchDataUsers();
