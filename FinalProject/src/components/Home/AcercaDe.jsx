@@ -2,7 +2,6 @@ import React from 'react';
 import '../../styles/AcercaDe.css';
 import ps from '../../img/ps.jpg';
 import ps2 from '../../img/ps2.jpg';
-import Logo from '../../img/logo.jpg';
 import rc from '../../img/rc.jpg';
 import MapaComp from './MapaComp';
 

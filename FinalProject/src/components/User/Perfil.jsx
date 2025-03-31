@@ -29,17 +29,17 @@ function PerfilUser() {
   return (
     <div id='div'>
       <div id="Container">
-        <div>
-          <p><strong>Nombre: </strong>{user.nombre}</p>
-          <p><strong>Cédula: </strong>{user.cedula}</p>
-          <p><strong>Teléfono: </strong>{user.telefono}</p>
-          <p><strong>Correo: </strong>{user.correo}</p>
-          <p><strong>Filial: </strong>{user.filial}</p>
-          <p><strong>¿Posee Carnet de manipulación de Alimentos?: </strong>{user.carnet}</p>
-          <p><strong>Contraseña: </strong>{user.password}</p>
-        </div>
-        <div>
-          <input type="button" onClick={cerrar} value="Cerrar Sesión" />
+        <div id='InfoPerfil'>
+          <div id="Form">
+            <p><strong>Nombre: </strong>{user.nombre}</p>
+            <p><strong>Cédula: </strong>{user.cedula}</p>
+            <p><strong>Teléfono: </strong>{user.telefono}</p>
+            <p><strong>Correo: </strong>{user.correo}</p>
+            <p><strong>Filial: </strong>{user.filial}</p>
+            <p><strong>¿Posee Carnet de manipulación de Alimentos?: </strong>{user.carnet}</p>
+            <p><strong>Contraseña: </strong>{user.password}</p>
+          </div>
+        <input type="button" onClick={cerrar} value="Cerrar Sesión" id='btn' />
         </div>
       </div>
     </div>

@@ -17,18 +17,22 @@ function RegistroHabitantes() {
         <div id='Container'>
           {habitantes.map((habitante,index) =>(
             <li key={index}>
-              <p><strong>Apodo: </strong>{habitante.apodo}</p>
-              <p><strong>Nombre: </strong>{habitante.nombre}</p>
-              <p><strong>Edad: </strong>{habitante.edad}</p>
-              <p><strong>Cédula: </strong>{habitante.cedula}</p>
-              <p><strong>Zona: </strong>{habitante.zona}</p>
-              <p><strong>Alimentación: </strong>{habitante.alimentacion}</p>
-              <p><strong>Estudios: </strong>{habitante.estudios}</p>
-              <p><strong>Enfermedades: </strong>{habitante.enfermedades}</p>
-              <p><strong>Medicamentos: </strong>{habitante.medicamentos}</p>
-              <p><strong>Atención Médica: </strong>{habitante.atencionMed}</p>
-              <p><strong>Atención Psicológica: </strong>{habitante.atencionPsi}</p>
-              <p><strong>Formación Laboral: </strong>{habitante.laboral}</p>
+              <div id="CardHabitantes">
+                <p id='centrar'><strong>Información Personal</strong></p>
+                <p><strong>Apodo: </strong>{habitante.apodo}</p>
+                <p><strong>Nombre: </strong>{habitante.nombre}</p>
+                <p><strong>Edad: </strong>{habitante.edad}</p>
+                <p><strong>Cédula: </strong>{habitante.cedula}</p>
+                <p><strong>Zona: </strong>{habitante.zona}</p>
+                <p><strong>Alimentación: </strong>{habitante.alimentacion}</p>
+                <p><strong>Higiene: </strong>{habitante.higiene}</p>
+                <p><strong>Estudios: </strong>{habitante.estudios}</p>
+                <p><strong>Enfermedades: </strong>{habitante.enfermedades}</p>
+                <p><strong>Medicamentos: </strong>{habitante.medicamentos}</p>
+                <p><strong>Atención Médica: </strong>{habitante.atencionMed}</p>
+                <p><strong>Atención Psicológica: </strong>{habitante.atencionPsi}</p>
+                <p><strong>Formación Laboral: </strong>{habitante.laboral}</p>
+              </div>
             </li>
           ))}
         </div>

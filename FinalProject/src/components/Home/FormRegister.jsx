@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import llamadosUser from '../../services/llamadosUser'
+import Swal from 'sweetalert2';
 
 function FormRegister() {
   const [nombreUser, setNombreUser]=useState()
@@ -39,35 +40,36 @@ function FormRegister() {
     setPasswordUser(evento.target.value)
   }
 
+  function validarFormulario() {
+    if (!nombreUser || !cedulaUser || !telefonoUser || !correoUser || !filialUser || !carnetUser || !passwordUser) {
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Por favor, completa todos los campos antes de registrarte.',
+      });
+      return false;
+    }
+    return true;
+  }
+
   function cargar() {
-    llamadosUser.post(nombreUser,cedulaUser,telefonoUser,correoUser,filialUser,carnetUser,passwordUser,"user")
-    navigate('/login')
+    if (validarFormulario()) {
+      llamadosUser.post(nombreUser, cedulaUser, telefonoUser, correoUser, filialUser, carnetUser, passwordUser, "user");
+      navigate('/login');
+    }
   }
   return (
     <div id='div'>
       <div id='main'>
-        <div id='FormLog'>
-          <h3>Registro de Usuarios</h3>
-          <div id='block'>
-            <label htmlFor="nombre">Nombre Completo:</label>
-            <input onChange={nombre} value={nombreUser} type="text" id='nombre' />
-          </div>
-          <div id="block">
-            <label htmlFor="cedula">Número de Cédula:</label>
-            <input onChange={cedula} value={cedulaUser} type="number" id='cedula' />
-          </div>
-          <div id="block">
-            <label htmlFor="telefono">Número de Teléfono:</label>
-            <input onChange={telefono} value={telefonoUser} type="number" id='telefono' />
-          </div>
-          <div id="block">
-            <label htmlFor="correo">Correo Electrónico:</label>
-            <input onChange={correo} value={correoUser} type="text" id='correo' />
-          </div>
-          <div id="block">
-            <label htmlFor="filial">Filial:</label>
-            <select onChange={filial} value={filialUser} id="filial">
-              <option value="" selected>Elige una opción</option>
+        <div id="ContainerF">
+          <div id='Form'>
+            <h3>Registro de Usuarios</h3>
+            <input onChange={nombre} value={nombreUser} type="text" placeholder='Nombre Completo' />
+            <input onChange={cedula} value={cedulaUser} type="number" placeholder='Número de Cédula' />
+            <input onChange={telefono} value={telefonoUser} type="number" placeholder='Número de Télefono' />
+            <input onChange={correo} value={correoUser} type="text" placeholder='Correo Electrónico' />
+            <select onChange={filial} value={filialUser}>
+              <option value="" selected>Filial</option>
               <option value="Porvenir">Porvenir</option>
               <option value="20 de Noviembre">20 de Noviembre</option>
               <option value="Chacarita">Chacarita</option>
@@ -77,21 +79,15 @@ function FormRegister() {
               <option value="Santa Eduviges">Santa Eduviges</option>
               <option value="Fray Casiano">Fray Casiano</option>
             </select>
-          </div>
-          <div id="block">
-            <label htmlFor="carnet">Carnet de Manipulación de Alimentos:</label>
-            <select onChange={carnet} value={carnetUser} id="carnet">
-              <option value="" selected>Elige una opción</option>
+            <select onChange={carnet} value={carnetUser}>
+              <option value="" selected>¿Tiene Carnet de Manipulación de Alimentos?</option>
               <option value="si">Sí</option>
               <option value="no">No</option>
             </select>
-          </div>
-          <div id="block">
-            <label htmlFor="password">Contraseña:</label>
-            <input onChange={password} value={passwordUser} type="password" id='password' />
+            <input onChange={password} value={passwordUser} type="password" placeholder='Contraseña:' />
           </div>
           <input onClick={cargar} type="button" value="Registrarse" id='btn' />
-          <p>¿Ya tienes una cuenta? <Link to="/login">Inicia Aquí</Link></p>
+          <p id='linkcito'>¿Ya tienes una cuenta? <Link id='Link2' to="/login">Inicia Aquí</Link></p>
         </div>
       </div>
     </div>

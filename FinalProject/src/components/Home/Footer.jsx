@@ -13,25 +13,25 @@ function Footer() {
                     <img src={Logo} alt="" />
                 </div>
                 <ul id='ulF'>
-                    <li><box-icon type='logo' name='whatsapp' color='#fff'></box-icon></li>
-                    <li><box-icon type='logo' name='facebook' color='#fff'></box-icon></li>
-                    <li><box-icon type='logo' name='instagram-alt' color='#fff'></box-icon></li>
+                    <a href="https://www.facebook.com/laSantaCruzChacarita/"><box-icon type='logo' name='whatsapp' color='#fff'></box-icon></a>
+                    <a href="https://www.facebook.com/laSantaCruzChacarita/"><box-icon type='logo' name='facebook' color='#fff'></box-icon></a>
+                    <a href="lasantacruzdechacarita@gmail.com"><box-icon name='envelope' color='#fff'></box-icon></a>
                 </ul>
             </div>
             <div id='divF'>
                 <h3 id='h3'>Navegación</h3>
                 <ul id='ul'>
-                    <li><Link id='Link' to="/">Acerca de</Link></li>
-                    <li><Link id='Link' to="/estadistica"> Estadísticas</Link></li>
-                    <li><Link id='Link' to="/red">Red de Apoyo</Link></li>
+                    <Link id='Link' to="/">Acerca de</Link>
+                    <Link id='Link' to="/estadistica"> Estadísticas</Link>
+                    <Link id='Link' to="/red">Red de Apoyo</Link>
                 </ul>
             </div>
-            <div  id='divF'>
+            <div id='divF'>
                 <h3 id='h3'>Contactos</h3>
                 <ul id='ul'>
-                    <li>Coordinadora Rostro de Cristo</li>
-                    <li>Coordinador Pastoral Social</li>
-                    <li>Oficina Parroquial</li>
+                    <a id='Link' href="">Coordinadora Rostro de Cristo</a>
+                    <a id='Link' href="">Coordinador Pastoral Social</a>
+                    <a id='Link' href="">Oficina Parroquial</a>
                 </ul>
             </div>
         </nav>

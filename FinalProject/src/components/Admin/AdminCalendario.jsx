@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import llamadosEventos from '../../services/llamadosEventos'
+import Swal from 'sweetalert2';
 
 function AdminCalendario() {
     const [nombreEvento, SetNombreEvento]=useState()
@@ -28,8 +29,23 @@ function AdminCalendario() {
         SetHoraFEvento(evento.target.value)
     }
 
+    function validarFormulario() {
+        if (!nombreEvento || !fechaEvento || !lugarEvento || !horaIEvento || !horaFEvento) {
+            Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Por favor, completa todos los campos.',
+            });
+            return false;
+        }
+    return true;
+    }
+
     function cargar() {
-        llamadosEventos.post(nombreEvento,fechaEvento,lugarEvento,horaIEvento,horaFEvento)  
+    if (validarFormulario()) {
+        llamadosEventos.post(nombreEvento,fechaEvento,lugarEvento,horaIEvento,horaFEvento)
+        window.location.reload();  
+    }
     }
 
     return (
@@ -42,8 +58,8 @@ function AdminCalendario() {
                     <input onChange={lugar} value={lugarEvento} type="text" placeholder='Lugar' />
                     <input onChange={horaI} value={horaIEvento} type="time" placeholder='Hora Inicio' />
                     <input onChange={horaF} value={horaFEvento} type="time" placeholder='Hora Fin' />
-                    <box-icon onClick={cargar} name='check'></box-icon>
                 </div>
+                <input onClick={cargar} type="button" value="Agregar" id='btn' />
             </div>
         </div>
     )

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Logo from '../../img/logo.jpg';
 import '../../styles/Header.css';
 
@@ -11,23 +11,21 @@ function HeaderAdmin() {
                 <div id="Logo">
                     <img src={Logo} alt="" />
                 </div>
-                <li><Link id='Link' to="/habitantesAd">Registro</Link></li>
-                <li><Link id='Link' to="/organizacionAd">Organización</Link></li>
-                <li><Link id='Link' to="/agendaAd">Agenda</Link></li>
+                <Link id='Link' to="/habitantesAd">Registro</Link>
+                <Link id='Link' to="/organizacionAd">Organización</Link>
+                <Link id='Link' to="/agendaAd">Agenda</Link>
             </ul>
             <ul id='ul2'>
-                <div id="btnLogin">
-                    <li><Link id='Link' to="/perfilAd">Mi Cuenta</Link></li>
-                </div>
+                <Link id='Link' to="/perfilAd"><li id="btnLogin">Mi Cuenta</li></Link>
             </ul>
         </nav>
 
         <nav id='nav2'>
             <ul id='ulH'>
-                <li><Link id='Link' to="/homeAd">Acerca de</Link></li>
-                <li><Link id='Link' to="/estadisticaAd"> Estadísticas</Link></li>
-                <li><Link id='Link' to="/redAd">Red de Apoyo</Link></li>
-                <li><a id='Link' href="#footer">Contactos</a></li>
+                <Link id='Link' to="/homeAd">Acerca de</Link>
+                <Link id='Link' to="/estadisticaAd"> Estadísticas</Link>
+                <Link id='Link' to="/redAd">Red de Apoyo</Link>
+                <a id='Link' href="#footer">Contactos</a>
             </ul>
         </nav>
     </div>

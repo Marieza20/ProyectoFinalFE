@@ -42,6 +42,7 @@
       "cedula": "704850948",
       "zona": "Fray Casiano",
       "alimentacion": "Una vez por semana",
+      "higiene": "Una vez por semana",
       "estudios": "Sin Estudios",
       "enfermedades": "No",
       "medicamentos": "No",
@@ -57,6 +58,7 @@
       "cedula": "602230654",
       "zona": "20 de Noviembre",
       "alimentacion": "Una vez por semana",
+      "higiene": "Una vez por quincena",
       "estudios": "Primaria incompleta",
       "enfermedades": "No",
       "medicamentos": "No",
@@ -68,6 +70,7 @@
     {
       "zona": "San Luis",
       "alimentacion": "Una vez por semana",
+      "higiene": "No recibe",
       "estudios": "Sin Estudios",
       "enfermedades": "No",
       "medicamentos": "No",
@@ -79,6 +82,7 @@
     {
       "zona": "Porvenir",
       "alimentacion": "Una vez por semana",
+      "higiene": "Una vez por quincena",
       "estudios": "Primaria completa",
       "enfermedades": "No",
       "medicamentos": "No",
@@ -90,6 +94,7 @@
     {
       "zona": "20 de Noviembre",
       "alimentacion": "Una vez por semana",
+      "higiene": "Una vez por semana",
       "estudios": "Sin Estudios",
       "enfermedades": "No",
       "medicamentos": "No",
@@ -101,6 +106,7 @@
     {
       "zona": "20 de Noviembre",
       "alimentacion": "Una vez por semana",
+      "higiene": "No recibe",
       "estudios": "Secundaria incompleta",
       "enfermedades": "Sí",
       "medicamentos": "Sí",
@@ -112,6 +118,7 @@
     {
       "zona": "20 de Noviembre",
       "alimentacion": "Una vez por semana",
+      "higiene": "No recibe",
       "estudios": "Sin Estudios",
       "enfermedades": "No",
       "medicamentos": "No",
@@ -121,28 +128,16 @@
       "id": "d5f3"
     },
     {
-      "zona": "20 de Noviembre",
-      "alimentacion": "Una vez por quincena",
-      "estudios": "Secundaria completa",
+      "id": "e5e7",
+      "zona": "Chacarita",
+      "alimentacion": "Una vez por semana",
+      "higiene": "Una vez por semana",
+      "estudios": "Sin Estudios",
       "enfermedades": "No",
       "medicamentos": "No",
       "atencionMed": "No",
       "atencionPsi": "No",
-      "laboral": "Sí",
-      "id": "51d9"
-    },
-    {
-      "id": "54fe"
-    },
-    {
-      "id": "4122",
-      "apodo": "hh"
-    },
-    {
-      "id": "aa90"
-    },
-    {
-      "id": "0e8b"
+      "laboral": "No"
     }
   ],
   "equipos": [
@@ -150,29 +145,25 @@
       "nombre": "Equipo de Cocina",
       "encargado": "Mary",
       "descripcion": "El grupo se encarga de la preparación de los menús semanales y los alimentos para los habitantes de calle, así como el traslado al comedor. ",
-      "enlace": "x",
       "id": "7295"
     },
     {
       "id": "331b",
       "nombre": "Equipo de Ambientación",
       "encargado": "Rodolfo",
-      "descripcion": "El grupo se encarga de la preparación del lugar, orden del mobiliario y vajilla para cada uno de los habitantes de calle.",
-      "enlace": "x"
+      "descripcion": "El grupo se encarga de la preparación del lugar, orden del mobiliario y vajilla para cada uno de los habitantes de calle."
     },
     {
       "id": "f13d",
       "nombre": "Equipo de Limpieza y Desinfección",
       "encargado": "Nuria",
-      "descripcion": "El grupo se encarga de la desinfección del lugar posterior a su uso, el lavado de platos, vasos y cucharas, la limpieza de sillas y mesas.",
-      "enlace": "x"
+      "descripcion": "El grupo se encarga de la desinfección del lugar posterior a su uso, el lavado de platos, vasos y cucharas, la limpieza de sillas y mesas."
     },
     {
       "id": "224e",
       "nombre": "Equipo de Escucha y Evangelización",
       "encargado": "Ali",
-      "descripcion": "El grupo se encarga primeramente del trato directo con los habitantes de calle y posteriormente de transmitirles un mensaje de amor.",
-      "enlace": "x"
+      "descripcion": "El grupo se encarga primeramente del trato directo con los habitantes de calle y posteriormente de transmitirles un mensaje de amor."
     }
   ],
   "eventos": [
@@ -185,12 +176,12 @@
       "id": "0fd9"
     },
     {
-      "id": "0398",
       "nombre": "Inducción",
       "fecha": "2025-03-04",
       "lugar": "Salón del 20 de Noviembre",
       "horai": "06:00",
-      "horaf": "08:00"
+      "horaf": "08:00",
+      "id": "0398"
     },
     {
       "id": "9162",

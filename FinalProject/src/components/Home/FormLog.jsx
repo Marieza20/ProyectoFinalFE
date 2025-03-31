@@ -1,7 +1,6 @@
 import React, { useState,useEffect } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 import llamadosUser from '../../services/llamadosUser';
-import '../../styles/Forms.css'
 import Swal from 'sweetalert2';
 import 'boxicons'
 
@@ -54,21 +53,14 @@ function FormLog() {
   return (
     <div id='div'>
       <div id='main'>
-        <div id='FormLog'>
-          <h3>Iniciar Sesión</h3>
-          <div id='block'>
-            <label htmlFor="nombre">Teléfono o Correo:</label>
-            <input onChange={nombre} value={nombreUser} type="text" id='nombre' />
-          </div>
-          <div id='block'>
-            <label htmlFor="password">Contraseña:</label>
-            <div className="btnInput">
-              <input onChange={password} value={passwordUser} type="password" id='password' />
-              <box-icon name='low-vision' className="input-icon"></box-icon>
-            </div>
+        <div id='ContainerF'>
+          <div id="Form">
+            <h3>Iniciar Sesión</h3>
+            <input onChange={nombre} value={nombreUser} type="text" placeholder='Teléfono o Correo:' />
+            <input onChange={password} value={passwordUser} type="password" placeholder='Contraseña:' />
           </div>
           <input onClick={acceder} type="button" value="Acceder" id='btn' />
-          <p>¿No tienes cuenta? <Link to="/register">Regístrate Aquí</Link></p>
+          <p id='linkcito'>¿No tienes cuenta? <Link id='Link2' to="/register">Regístrate Aquí</Link></p>
         </div>
       </div>
     </div>

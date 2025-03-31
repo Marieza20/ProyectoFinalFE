@@ -18,13 +18,13 @@ function Equipos() {
       <div id="Container">
         {equipos.map((equipo,index) =>(
           <li key={index}>
-            <div id="Card">
+            <div id="CardEquipos">
               <div>
                 <p><strong>{equipo.nombre}</strong></p>
                 <p><strong>Encargado: </strong>{equipo.encargado}</p>
               </div>
               <p>{equipo.descripcion}</p>
-              <input type="button" value="Unirme al grupo" />
+              <input id='btn' type="button" value="Unirme al grupo" />
             </div>
         </li>
         ))}

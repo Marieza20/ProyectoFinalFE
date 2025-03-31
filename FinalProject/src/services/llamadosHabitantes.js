@@ -21,7 +21,7 @@ async function get() {
 
 
 //////////LLAMADO POST//////////
-async function post(apodo,nombre,edad,cedula,zona,alimentacion,estudios,enfermedades,medicamentos,atencionMed,atencionPsi,laboral) {
+async function post(apodo,nombre,edad,cedula,zona,alimentacion,higiene,estudios,enfermedades,medicamentos,atencionMed,atencionPsi,laboral) {
     try {
         const habitanteData = { 
             apodo,
@@ -30,6 +30,7 @@ async function post(apodo,nombre,edad,cedula,zona,alimentacion,estudios,enfermed
             cedula,
             zona,
             alimentacion,
+            higiene,
             estudios,
             enfermedades,
             medicamentos,
@@ -55,7 +56,7 @@ async function post(apodo,nombre,edad,cedula,zona,alimentacion,estudios,enfermed
 
 
 //////////////LLAMADO UPDATE/////////////
-async function update(apodo,nombre,edad,cedula,zona,alimentacion,estudios,enfermedades,medicamentos,atencionMed,atencionPsi,laboral,id) 
+async function update(apodo,nombre,edad,cedula,zona,alimentacion,higiene,estudios,enfermedades,medicamentos,atencionMed,atencionPsi,laboral,id) 
 {
     try {
         const habitanteData = { 
@@ -65,6 +66,7 @@ async function update(apodo,nombre,edad,cedula,zona,alimentacion,estudios,enferm
             cedula,
             zona,
             alimentacion,
+            higiene,
             estudios,
             enfermedades,
             medicamentos,

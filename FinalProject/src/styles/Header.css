@@ -60,6 +60,17 @@ body{
     transition: 0.3s;
 }
 
+#Link2{
+    text-decoration: none;
+    cursor: pointer;
+    color: #574c20;
+    transition: 0.3s;
+}
+
+#Link2:hover{
+    color: #a39457;
+}
+
 #nav2{
     margin: auto;
     width: 60%;
@@ -75,30 +86,29 @@ body{
     gap: 5px;
 }
 
-#ulH li{
-    padding: 10px;
-}
-
 #ulH #Link{
+    padding: 10px;
     color: #172830;
 }
 
-#ulH li:hover{
+#ulH #Link:hover{
     border-radius: 20px;
-    background-color: rgb(185, 185, 185);
+    background-color: #F8F1D6;
 }
 
 #btnLogin{
     padding: 10px 15px;
     border-radius: 20px;
-    border: 1px solid rgb(119, 119, 119);
-    background-color: rgb(119, 119, 119);
+    border: 1px solid #F8F1D6;
+    background-color: #F8F1D6;
+    color: #172830;
     transition: 0.5s;
 }
 
 #btnLogin:hover{
-    border: 1px solid rgb(119, 119, 119);
+    border: 1px solid #F8F1D6;
     background: none;
+    color: #fff;
 }
 
 box-icon{

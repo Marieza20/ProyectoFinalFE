@@ -35,14 +35,16 @@ body{
 
 #ul{
     list-style: none;
+    display: flex;
+    flex-direction: column;
     color: #fff;
 }
 
-#ul li{
+#ul #Link{
     transition: 0.3s;
 }
 
-#ul li:hover{
+#ul #Link:hover{
     transform: translateX(8px);
 }
 

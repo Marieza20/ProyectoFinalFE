@@ -15,6 +15,7 @@ function MapaComp() {
     return (
         <div>
             <div id="id">
+                
                 <div id="mapa">
                     <MapContainer center={position} zoom={15} scrollWheelZoom={false} id='mapContainer'>
                         <TileLayer

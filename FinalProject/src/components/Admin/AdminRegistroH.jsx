@@ -11,6 +11,7 @@ function AdminRegistroH() {
     const [cedulaHabitante, setCedulaHabitante]=useState()
     const [zonaHabitante, setZonaHabitante]=useState()
     const [alimentacionHabitante, setAlimentacionHabitante]=useState()
+    const [higieneHabitante, setHigieneHabitante]=useState()
     const [estudiosHabitante, setEstudiosHabitante]=useState()
     const [enfermedadesHabitante, setEnfermedadesHabitante]=useState()
     const [medicamentosHabitante, setMedicamentosHabitante]=useState()
@@ -51,6 +52,10 @@ function AdminRegistroH() {
         setAlimentacionHabitante(evento.target.value)
     }
 
+    function higiene(evento) {
+        setHigieneHabitante(evento.target.value)
+    }
+
     function estudios(evento) {
         setEstudiosHabitante(evento.target.value)
     }
@@ -83,6 +88,7 @@ function AdminRegistroH() {
         setCedulaHabitante(encontrado.cedula);
         setZonaHabitante(encontrado.zona);
         setAlimentacionHabitante(encontrado.alimentacion);
+        setHigieneHabitante(encontrado.higiene);
         setEstudiosHabitante(encontrado.estudios);
         setEnfermedadesHabitante(encontrado.enfermedades);
         setMedicamentosHabitante(encontrado.medicamentos);
@@ -93,7 +99,7 @@ function AdminRegistroH() {
     }
 
     async function cargar(id) {
-        llamadosHabitantes.update(apodoHabitante,nombreHabitante,edadHabitante,cedulaHabitante,zonaHabitante,alimentacionHabitante,estudiosHabitante,enfermedadesHabitante,medicamentosHabitante,atencionMedHabitante,atencionPsiHabitante,laboralHabitante,id)
+        llamadosHabitantes.update(apodoHabitante,nombreHabitante,edadHabitante,cedulaHabitante,zonaHabitante,alimentacionHabitante,higieneHabitante,estudiosHabitante,enfermedadesHabitante,medicamentosHabitante,atencionMedHabitante,atencionPsiHabitante,laboralHabitante,id)
         const datos = await llamadosHabitantes.get();
         setHabitantes(datos);
         setEditandoId(null);
@@ -115,6 +121,7 @@ function AdminRegistroH() {
         async function actualizar(){
             const datos = await llamadosHabitantes.get()
             setHabitantes(datos)
+            window.location.reload();
         }
         }
     });
@@ -126,23 +133,27 @@ function AdminRegistroH() {
                 {habitantes.map((habitante,index) =>(
                 <li key={index}>
                     <div id='CardHabitantes'>
+                        <p id='centrar'><strong>Información Personal</strong></p>
                         <p><strong>Apodo: </strong>{habitante.apodo}</p>
                         <p><strong>Nombre: </strong>{habitante.nombre}</p>
                         <p><strong>Edad: </strong>{habitante.edad}</p>
                         <p><strong>Cédula: </strong>{habitante.cedula}</p>
                         <p><strong>Zona: </strong>{habitante.zona}</p>
                         <p><strong>Alimentación: </strong>{habitante.alimentacion}</p>
+                        <p><strong>Higiene: </strong>{habitante.higiene}</p>
                         <p><strong>Estudios: </strong>{habitante.estudios}</p>
                         <p><strong>Enfermedades: </strong>{habitante.enfermedades}</p>
                         <p><strong>Medicamentos: </strong>{habitante.medicamentos}</p>
                         <p><strong>Atención Médica: </strong>{habitante.atencionMed}</p>
                         <p><strong>Atención Psicológica: </strong>{habitante.atencionPsi}</p>
                         <p><strong>Formación Laboral: </strong>{habitante.laboral}</p>
-                        <box-icon id='icono' onClick={e=>editar(habitante.id)} type='solid' name='pencil'></box-icon>
-                        <box-icon id='icono' onClick={e=>eliminar(habitante.id)} type='solid' name='trash-alt'></box-icon>
+                        <div id='botones'>
+                            <input onClick={e=>editar(habitante.id)} type="button" value="Editar" id='btn' />
+                            <input onClick={e=>eliminar(habitante.id)} type="button" value="Eliminar" id='btn' />
+                        </div>
                     </div>
                     {editandoId === habitante.id && (
-                    <div  id="ContainerFE" className="mostrar">
+                    <div id="ContainerFE" className="mostrar">
                         <div id="Form">
                             <input onChange={apodo} value={apodoHabitante} type="text" placeholder='Apodo' />
                             <input onChange={nombre} value={nombreHabitante} type="text" placeholder='Nombre' />
@@ -164,7 +175,14 @@ function AdminRegistroH() {
                                 <option value="" selected>Frecuencia de la alimentación</option>
                                 <option value="Una vez por semana">Una vez por semana</option>
                                 <option value="Una vez por quincena">Una vez por quincena</option>
-                                <option value="Una vez por mes">Una vez por quincena</option>
+                                <option value="Una vez al mes">Una vez al mes</option>
+                                <option value="No recibe">No recibe</option>
+                            </select>
+                            <select onChange={higiene} value={higieneHabitante}>
+                                <option value="" selected>Frecuencia de Higiene</option>
+                                <option value="Una vez por semana">Una vez por semana</option>
+                                <option value="Una vez por quincena">Una vez por quincena</option>
+                                <option value="Una vez al mes">Una vez al mes</option>
                                 <option value="No recibe">No recibe</option>
                             </select>
                             <select onChange={estudios} value={estudiosHabitante}>
@@ -202,8 +220,8 @@ function AdminRegistroH() {
                                 <option value="Sí">Sí</option>
                                 <option value="No">No</option>
                             </select>
-                            <box-icon onClick={e=>cargar(habitante.id)} name='check'></box-icon>
                         </div>
+                        <input onClick={e=>cargar(habitante.id)} type="button" value="Guardar" id='btn' />
                     </div>
                     )}
                 </li>

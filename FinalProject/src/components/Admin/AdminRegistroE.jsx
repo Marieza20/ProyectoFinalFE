@@ -9,7 +9,6 @@ function AdminRegistroE() {
     const [nombreEquipo, SetNombreEquipo]=useState()
     const [encargadoEquipo, SetEncargadoEquipo]=useState()
     const [descripcionEquipo, SetDescripcionEquipo]=useState()
-    const [enlaceEquipo, SetEnlaceEquipo]=useState()
     const [editandoId, setEditandoId] = useState(null);
 
     useEffect(() => {
@@ -30,10 +29,6 @@ function AdminRegistroE() {
 
     function descripcion(evento) {
         SetDescripcionEquipo(evento.target.value)
-    }
-
-    function enlace(evento) {
-        SetEnlaceEquipo(evento.target.value)
     }
 
     function editar(id) {
@@ -68,6 +63,7 @@ function AdminRegistroE() {
         async function actualizar(){
             const datos = await llamadosEquipo.get()
             setEquipos(datos)
+            window.location.reload();
         }
         }
     });
@@ -84,23 +80,19 @@ function AdminRegistroE() {
                             <p><strong>Encargado: </strong>{equipo.encargado}</p>
                         </div>
                         <p>{equipo.descripcion}</p>
-                        <div id='btnCRUD'>
-                            <input type="button" value="Unirme al grupo" />
-                            <div>
-                                <box-icon id='icono' onClick={e=>editar(equipo.id)} type='solid' name='pencil'></box-icon>
-                                <box-icon id='icono' onClick={e=>eliminar(equipo.id)} type='solid' name='trash-alt'></box-icon>
-                            </div>
+                        <div id='botones'>
+                            <input onClick={e=>editar(equipo.id)} type="button" value="Editar" id='btn' />
+                            <input onClick={e=>eliminar(equipo.id)} type="button" value="Eliminar" id='btn' />
                         </div>
                     </div>
                     {editandoId === equipo.id && (
                     <div id="ContainerFE" className="mostrar">
-                        <div id='Form'>
+                        <div id='Form' className='Form'>
                             <input onChange={nombre} value={nombreEquipo} type="text" />
                             <input onChange={encargado} value={encargadoEquipo} type="text" />
                             <textarea onChange={descripcion} value={descripcionEquipo}></textarea>
-                            <input onChange={enlace} value={enlaceEquipo} type='text' />
-                            <box-icon onClick={e=>cargar(equipo.id)} name='check'></box-icon>
                         </div>
+                        <input onClick={e=>cargar(equipo.id)} type="button" value="Guardar" id='btn' />
                     </div>
                     )}
                 </li>

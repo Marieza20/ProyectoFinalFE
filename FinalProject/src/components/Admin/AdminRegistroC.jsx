@@ -55,6 +55,7 @@ function AdminRegistroC() {
         const datos = await llamadosEventos.get()
         setEventos(datos)
         setEditandoId(null);
+        Swal.fire("Editado correctamente", "", "success");
     }
 
     function eliminar(id) {
@@ -73,6 +74,7 @@ function AdminRegistroC() {
             async function actualizar(){
                 const datos = await llamadosEventos.get()
                 setEventos(datos)
+                window.location.reload();
             }
             }
         });
@@ -91,29 +93,29 @@ function AdminRegistroC() {
             <div id='Container'>
                 {eventos.map((evento,index) =>(
                 <li key={index}>
-                    <div id='Card'>
-                        <h2><button type="button">{evento.fecha}</button></h2>
+                    <div id='CardEquipos'>
+                        <h3>{evento.fecha}</h3>
                         <div>
                             <strong>{evento.nombre}</strong>
                             <p><strong>Lugar: </strong>{evento.lugar}</p>
                             <p><strong>Hora de Inicio: </strong>{evento.horai}</p>
                             <p><strong>Hora de Finalización: </strong>{evento.horaf}</p>
                         </div>
-                        <div>
-                            <box-icon id='icono' onClick={e=>editar(evento.id)} type='solid' name='pencil'></box-icon>
-                            <box-icon id='icono' onClick={e=>eliminar(evento.id)} type='solid' name='trash-alt'></box-icon>
+                        <div id='botones'>
+                            <input onClick={e=>editar(evento.id)} type="button" value="Editar" id='btn' />
+                            <input onClick={e=>eliminar(evento.id)} type="button" value="Eliminar" id='btn' />
                         </div>
                     </div>
                     {editandoId === evento.id && (
-                    <div id="ContainerF" className="mostrar">
+                    <div id="ContainerFE" className="mostrar">
                         <div id="Form">
                             <input onChange={nombre} value={nombreEvento} type="text" />
                             <input onChange={fecha} value={fechaEvento} type="date" />
                             <input onChange={lugar} value={lugarEvento} type="text" />
                             <input onChange={horaI} value={horaIEvento} type="time" />
                             <input onChange={horaF} value={horaFEvento} type="time" />
-                            <box-icon onClick={e=>cargar(evento.id)} name='check'></box-icon>
                         </div>
+                        <input onClick={e=>cargar(evento.id)} type="button" value="Guardar" id='btn' />
                     </div>
                     )}
                 </li>

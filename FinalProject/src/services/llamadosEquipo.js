@@ -21,13 +21,12 @@ async function get() {
 
 
 //////////LLAMADO POST//////////
-async function post(nombre,encargado,descripcion,enlace) {
+async function post(nombre,encargado,descripcion) {
     try {
         const equipoData = { 
             nombre,
             encargado,
-            descripcion,
-            enlace
+            descripcion
         };
 
         const response = await fetch("http://localhost:3000/equipos", {
@@ -47,14 +46,13 @@ async function post(nombre,encargado,descripcion,enlace) {
 
 
 //////////////LLAMADO UPDATE/////////////
-async function update(nombre,encargado,descripcion,enlace,id) 
+async function update(nombre,encargado,descripcion,id) 
 {
     try {
         const equipoData = { 
             nombre,
             encargado,
-            descripcion,
-            enlace
+            descripcion
         };
 
         const response = await fetch("http://localhost:3000/equipos/"+id, {

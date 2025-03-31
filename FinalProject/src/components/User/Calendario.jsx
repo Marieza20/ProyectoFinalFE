@@ -18,18 +18,15 @@ function Calendario() {
       <div id='Container'>
         {eventos.map((evento,index) =>(
         <li key={index}>
-          <div className="accordion-item">
-            <h2><button type="button">{evento.fecha}</button></h2>
+          <div id="CardEquipos">
+            <h3>{evento.fecha}</h3>
             <div>
-              <div className="accordion-body">
-                <p>{evento.nombre}</p>
-                <p>{evento.lugar}</p>
-                <p>{evento.horai}</p>
-                <p>{evento.horaf}</p>
-                <box-icon name='check'></box-icon>
-                <box-icon name='x'></box-icon>
-              </div>
+                <strong>{evento.nombre}</strong>
+                <p><strong>Lugar: </strong>{evento.lugar}</p>
+                <p><strong>Hora de Inicio: </strong>{evento.horai}</p>
+                <p><strong>Hora de Finalización: </strong>{evento.horaf}</p>
             </div>
+            <input id='btn' type="button" value="Confirmar Asistencia" />
           </div>
         </li>
         ))}
